@@ -1,0 +1,72 @@
+
+{
+  "intent": [
+    {
+      "tag" : "greeting",
+      "patterns" : [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "hiya",
+        "hola",
+        "yo"
+      ],
+      "responses" : [
+        "hello",
+        "good to see you",
+        "hi there",
+        "hi",
+        "good morning",
+        "good afternon",
+        "good evening",
+        "hey"
+      ]
+    },
+    {
+      "tag" : "feeling",
+      "patterns" : [
+        "how are you?",
+        "how goes it?",
+        "what's up?",
+        "sup?",
+        "how is your day?",
+        "how is it going?",
+        "how are you doing?",
+        "are you ok?",
+        "are you alright?",
+        "??",
+        "?",
+        "???"
+      ],
+      "responses" : [
+        {
+          "positive" : [
+            "i'm good! how are you?",
+            "fantastic, and you?",
+            "i'm doing well, how are you?",
+            "peachy, yourself?",
+            "really good",
+            "couldn't be better, how are you?",
+            "all the better for talking to you!"
+          ],
+          "negative" : [
+            "not great, how are you?",
+            "terrible",
+            "awful",
+            "couldn't be worse",
+            "a bit sad, and you?",
+            "i'm bored",
+            "i'm tired",
+            "i'm not doing well, how are you?",
+            "i feel unwell",
+            "a bit under the weather"
+          ]
+        }
+      ]
+    }
+  ]
+}
