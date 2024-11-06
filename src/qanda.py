@@ -14,7 +14,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 stem = PorterStemmer()
 analyzer = TfidfVectorizer(stop_words=stopwords.words('english')).build_analyzer()
 punctuation = string.punctuation
-dataset = pd.read_csv('Coursework/data/QAdataset.csv')
+dataset = pd.read_csv('data/QAdataset.csv')
 joblib.dump(dataset,'qanda_df.joblib')
 questions = dataset['Question'].values
 
