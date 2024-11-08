@@ -19,24 +19,12 @@ def create_smalltalk_dataset():
     joblib.dump(smalltalk_df, 'smalltalk/df.joblib')
     return True
 
-def create_subject_classifier():
-    smalltalk_df = joblib.load('smalltalk/df.joblib')
-    inputs = smalltalk_df['Input'].values
-    labels = smalltalk_df['Subject'].values
-    X_train, X_test, y_train, y_test = train_test_split(inputs, labels, stratify=labels, test_size=0.25, random_state=42)
-    vect = TfidfVectorizer(sublinear_tf=True, use_idf=True)
-    X_train_tf = vect.fit_transform(X_train)
-    clf = SVC(C=1.0, kernel='rbf').fit(X_train_tf, y_train)
-    joblib.dump(clf, 'smalltalk/subject_clf.joblib')
-    joblib.dump(vect, 'smalltalk/classifier_vectorizer.joblib')
-    return True
-
 def create_classifier(dataset):
     df = joblib.load(f'{dataset}/df.joblib')
     inputs = df['Input'].values
     labels = df['Intent'].values
     X_train, X_test, y_train, y_test = train_test_split(inputs, labels, stratify=labels, test_size=0.25, random_state=42)
-    vect = TfidfVectorizer(sublinear_tf=True, use_idf=True)
+    vect = TfidfVectorizer(sublinear_tf=True, use_idf=True, lowercase=True)
     X_train_tf = vect.fit_transform(X_train)
     clf = SVC(C=1.0, kernel='rbf').fit(X_train_tf, y_train)
     joblib.dump(clf, f'{dataset}/clf.joblib')
@@ -58,7 +46,7 @@ def stemmer(doc):
     return [stem.stem(w) for w in analyzer(doc)]
 
 def create_vectors(df):
-    vect = TfidfVectorizer(use_idf=True, sublinear_tf=True, analyzer=stemmer)
+    vect = TfidfVectorizer(use_idf=True, sublinear_tf=True, analyzer=stemmer, lowercase=True)
     docs = df['Input'].values
     return vect.fit_transform(docs), vect
 
@@ -92,8 +80,6 @@ def print_output(input, dataset):
     output = match_output(intent, input, dataset)
     return output
 
-#print(print_output('do you like me?','smalltalk'))
-
 
 ###################################################################################
 
@@ -110,7 +96,7 @@ def create_intent_response_dataset():
     joblib.dump(intents_df,'intent_response/df.joblib')
     return True
 
-def __init__(dataset):
+def smalltalk_init(dataset):
     if dataset=='smalltalk':
         create_smalltalk_dataset()
     elif dataset=='intent_response':
@@ -119,4 +105,3 @@ def __init__(dataset):
     create_intent_dfs(dataset)
     build_dt_matrices(dataset)
 
-print(print_output("how is your day?",'smalltalk'))

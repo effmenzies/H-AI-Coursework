@@ -7,16 +7,16 @@ import json
 import time
 from nltk import *
 from database import *
-from similarity import *
 from qanda import *
 from smalltalk import *
 
 class Chatbot:
     def __init__(self, database):
         self.name = database
+        self.sentiment = 0
         nltk.download('wordnet')
         build_dt_matrix(questions)
-
+        smalltalk_init('smalltalk')
     
     def main(self):
         database = Database(self.name)
@@ -42,6 +42,9 @@ class Chatbot:
 
             while True:
                 #main loop
+                if userInput:
+                    s = analyse_sentiment(userInput)
+                    self.sentiment+=s
                 print(f"<{self.name}>: How can I help you today?")
                 userInput = input(f"<{user[1]}>: ")
                 if userInput.lower() == 'exit':
@@ -53,6 +56,7 @@ class Chatbot:
                     answer = qanda_search(userInput)
                     time.sleep(1)
                     print(f"<{self.name}>: {answer}")
+                
                 
         finally:
             database.connection.close()
