@@ -1,5 +1,5 @@
 import pandas as pd
-import joblib, nltk, re, pprint, string, numpy as np, statistics
+import joblib, nltk, re, pprint, string, numpy as np, statistics, json
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -11,11 +11,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def create_smalltalk_dataset():
     smalltalk_df = pd.read_csv('data/smalltalk_intent.csv')
-    smalltalk_df['Intent'] = smalltalk_df['Intent'].str[10:]
-    smalltalk_df['Subject'] = smalltalk_df['Intent'].str.split('_').str[0]
-    smalltalk_df['Intent'] = smalltalk_df['Intent'].str.split('_').str[1:].apply('_'.join)
+    smalltalk_df['Output'] = smalltalk_df['Intent'].str.split('_').str[2:].apply('_'.join)
+    smalltalk_df['Intent'] = smalltalk_df['Intent'].str.split('_').str[1]
     smalltalk_df = smalltalk_df.rename(columns= {'Utterances':'Input'})
-    smalltalk_df = smalltalk_df[['Input','Subject','Intent']]
+    smalltalk_df = smalltalk_df[['Input','Intent','Output']]
     smalltalk_df = smalltalk_df.drop_duplicates()
     joblib.dump(smalltalk_df, 'smalltalk/df.joblib')
     return True
@@ -32,13 +31,25 @@ def create_subject_classifier():
     joblib.dump(vect, 'smalltalk/classifier_vectorizer.joblib')
     return True
 
-def create_intent_dfs():
-    smalltalk_df = joblib.load('smalltalk/df.joblib')
-    labels = set(smalltalk_df['Subject'])
+def create_classifier(dataset):
+    df = joblib.load(f'{dataset}/df.joblib')
+    inputs = df['Input'].values
+    labels = df['Intent'].values
+    X_train, X_test, y_train, y_test = train_test_split(inputs, labels, stratify=labels, test_size=0.25, random_state=42)
+    vect = TfidfVectorizer(sublinear_tf=True, use_idf=True)
+    X_train_tf = vect.fit_transform(X_train)
+    clf = SVC(C=1.0, kernel='rbf').fit(X_train_tf, y_train)
+    joblib.dump(clf, f'{dataset}/clf.joblib')
+    joblib.dump(vect, f'{dataset}/clf_vect.joblib')
+    return True
+
+def create_intent_dfs(dataset):
+    df = joblib.load(f'{dataset}/df.joblib')
+    labels = set(df['Intent'])
     df_dict = {}
     for label in labels:
-        df_dict[label] = smalltalk_df[smalltalk_df['Subject']==label]
-    joblib.dump(df_dict, 'smalltalk/intent_df_dict.joblib')
+        df_dict[label] = df[df['Intent']==label]
+    joblib.dump(df_dict, f'{dataset}/intent_df_dict.joblib')
     return True
 
 def stemmer(doc):
@@ -51,39 +62,61 @@ def create_vectors(df):
     docs = df['Input'].values
     return vect.fit_transform(docs), vect
 
-def build_dt_matrices():
-    df_dict = joblib.load('smalltalk/intent_df_dict.joblib')
+def build_dt_matrices(dataset):
+    df_dict = joblib.load(f'{dataset}/intent_df_dict.joblib')
     for df in df_dict.keys():
         vectors, vect = create_vectors(df_dict[df])
-        joblib.dump(vectors, f"smalltalk/vectors/{df}_vectors.joblib")
-        joblib.dump(vect, f"smalltalk/vectors/{df}_vectorizer.joblib")
+        joblib.dump(vectors, f"{dataset}/vectors/{df}_vectors.joblib")
+        joblib.dump(vect, f"{dataset}/vectors/{df}_vectorizer.joblib")
     return True
 
-def __init__():
-    create_smalltalk_dataset()
-    create_subject_classifier()
-    create_intent_dfs()
-    build_dt_matrices()
-
-
-def cosine_sim(subject, input):
-    vect = joblib.load(f'smalltalk/vectors/{subject}_vectorizer.joblib')
-    vectors = joblib.load(f'smalltalk/vectors/{subject}_vectors.joblib')
+def cosine_sim(intent, input, dataset):
+    vect = joblib.load(f'{dataset}/vectors/{intent}_vectorizer.joblib')
+    vectors = joblib.load(f'{dataset}/vectors/{intent}_vectors.joblib')
     return cosine_similarity(vect.transform([input]), vectors).flatten()
 
-def match_intent(subject, input):
-    similarities = cosine_sim(subject, input)
+def match_output(intent, input, dataset):
+    similarities = cosine_sim(intent, input, dataset)
     best_match = statistics.mode(similarities.argsort()[-3:][::-1])
-    df_dict = joblib.load('smalltalk/intent_df_dict.joblib')
-    intents = df_dict[subject]['Intent'].values
+    df_dict = joblib.load(f'{dataset}/intent_df_dict.joblib')
+    intents = df_dict[intent]['Output'].values
     return intents[best_match]
 
-def match_subject(input):
-    clf = joblib.load('smalltalk/subject_clf.joblib')
+def match_intent(input, dataset):
+    clf = joblib.load(f'{dataset}/clf.joblib')
     return clf.predict(input)[0]
 
-def print_subject_intent(input):
-    vect = joblib.load('smalltalk/classifier_vectorizer.joblib')
-    subject = match_subject(vect.transform([input]))
-    intent = match_intent(subject, input)
-    print(subject, intent)
+def print_output(input, dataset):
+    vect = joblib.load(f'{dataset}/clf_vect.joblib')
+    intent = match_intent(vect.transform([input]), dataset)
+    output = match_output(intent, input, dataset)
+    return output
+
+#print(print_output('do you like me?','smalltalk'))
+
+
+###################################################################################
+
+def create_intent_response_dataset():
+    with open('data/intents.json','r') as file:
+        data = json.load(file)['intents']
+    norm_data=[]
+    for tag in data:
+        patterns = tag['patterns']
+        responses = tag['responses']
+        for pattern, response in zip(patterns, responses):
+            norm_data.append({'Input':pattern, 'Intent':tag['tag'], 'Output':response})
+    intents_df = pd.DataFrame(norm_data)
+    joblib.dump(intents_df,'intent_response/df.joblib')
+    return True
+
+def __init__(dataset):
+    if dataset=='smalltalk':
+        create_smalltalk_dataset()
+    elif dataset=='intent_response':
+        create_intent_response_dataset()
+    create_classifier(dataset)
+    create_intent_dfs(dataset)
+    build_dt_matrices(dataset)
+
+print(print_output("how is your day?",'smalltalk'))

@@ -16,7 +16,6 @@ class Chatbot:
         self.name = database
         nltk.download('wordnet')
         build_dt_matrix(questions)
-        create_smalltalk()
 
     
     def main(self):
