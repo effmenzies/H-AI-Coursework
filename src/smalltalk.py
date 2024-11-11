@@ -8,6 +8,10 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import cosine_similarity
 
+def create_resopnse_dataset():
+    df = pd.read_csv('data/intent_responses.csv')
+    joblib.dump(df, 'smalltalk/responses_df.joblib')
+    return True
 
 def create_smalltalk_dataset():
     smalltalk_df = pd.read_csv('data/smalltalk_intent.csv')
@@ -74,12 +78,19 @@ def match_intent(input, dataset):
     clf = joblib.load(f'{dataset}/clf.joblib')
     return clf.predict(input)[0]
 
-def print_output(input, dataset):
+def response(input, dataset):
     vect = joblib.load(f'{dataset}/clf_vect.joblib')
     intent = match_intent(vect.transform([input]), dataset)
     output = match_output(intent, input, dataset)
-    return output
+    return (intent, output)
 
+def find_response(input):
+    output = response(input, 'smalltalk')
+    responses = joblib.load('smalltalk/responses_df.joblib')
+    output = responses[(responses['Intent']==output[0]) & (responses['Input']==output[1])]['Output']
+    if len(output)!=0:
+        return output.values[0]
+    else: return None
 
 ###################################################################################
 
@@ -104,4 +115,5 @@ def smalltalk_init(dataset):
     create_classifier(dataset)
     create_intent_dfs(dataset)
     build_dt_matrices(dataset)
+    create_resopnse_dataset()
 

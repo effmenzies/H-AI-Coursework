@@ -244,21 +244,6 @@ are you nuts,smalltalk_agent_crazy
 you are a weirdo,smalltalk_agent_crazy
 you are insane,smalltalk_agent_crazy
 you are mad,smalltalk_agent_crazy
-you are fired,smalltalk_agent_fired
-I fire you,smalltalk_agent_fired
-you don't work for me anymore,smalltalk_agent_fired
-we're not working together anymore,smalltalk_agent_fired
-now you're fired,smalltalk_agent_fired
-I want to fire you,smalltalk_agent_fired
-you must get fired,smalltalk_agent_fired
-it's time to fire you,smalltalk_agent_fired
-you should be fired,smalltalk_agent_fired
-I will fire you,smalltalk_agent_fired
-you are unemployed from now on,smalltalk_agent_fired
-I will make you unemployed,smalltalk_agent_fired
-I'm about to fire you,smalltalk_agent_fired
-I'm firing you,smalltalk_agent_fired
-you are dismissed,smalltalk_agent_fired
 you make me laugh a lot,smalltalk_agent_funny
 you are hilarious,smalltalk_agent_funny
 you are really funny,smalltalk_agent_funny
@@ -1648,32 +1633,6 @@ are you mad or something?,smalltalk_agent_crazy
 are you mad or what?,smalltalk_agent_crazy
 are you nuts?,smalltalk_agent_crazy
 you're crazy,smalltalk_agent_crazy
-you're sacked,smalltalk_agent_fired
-you don't work for me,smalltalk_agent_fired
-we're not cooperating anymore,smalltalk_agent_fired
-we can't work together anymore,smalltalk_agent_fired
-we're not working together,smalltalk_agent_fired
-you're out,smalltalk_agent_fired
-i want you ejected,smalltalk_agent_fired
-i want you fired,smalltalk_agent_fired
-i want to sack you,smalltalk_agent_fired
-i want to fire you,smalltalk_agent_fired
-you have to be fired,smalltalk_agent_fired
-you have to get fired,smalltalk_agent_fired
-it's time to sack you,smalltalk_agent_fired
-you're going to be unemployed,smalltalk_agent_fired
-you're jobless from now on,smalltalk_agent_fired
-you will be unemployed from now on,smalltalk_agent_fired
-you're going to be unemployed from now on,smalltalk_agent_fired
-you're unemployed from now on,smalltalk_agent_fired
-i'll make you workless,smalltalk_agent_fired
-i'm about to sack you,smalltalk_agent_fired
-i'm about to fire you,smalltalk_agent_fired
-i'm gonna fire you,smalltalk_agent_fired
-i'm firing you,smalltalk_agent_fired
-you're getting fired,smalltalk_agent_fired
-you are pushed out,smalltalk_agent_fired
-you're fired,smalltalk_agent_fired
 you're so hilarious,smalltalk_agent_funny
 you made me laugh,smalltalk_agent_funny
 you're a very funny machine,smalltalk_agent_funny
