@@ -1,4 +1,4 @@
-import nltk, string, pandas as pd
+import nltk, string, pandas as pd, math
 from nltk.corpus import stopwords, wordnet
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
@@ -30,12 +30,12 @@ def tag_input(input):
     return nltk.pos_tag([word for word in word_tokenize(input) if word not in string.punctuation], tagset='universal')
 
 def extract_nouns(input):
-    i = remove_fluff(input)
-    return [word[0] for word in tag_input(i) if (word[1]=='NOUN') & (word[0]!='hello')]
+    input=remove_fluff(input)
+    return [word[0] for word in tag_input(input) if (word[1]=='NOUN') and (word[0]!='name') and (word[0]!='hello')]
 
 def extract_names(input):
-    pattern = r"(?:call me|my (?:full )?name(?:'s| is)|i'm|i (?:like|prefer)(?: to be called)?)\s+([A-Za-z]+)"
-    names = re.findall(pattern, input, re.IGNORECASE)
-    return names
+    pattern = r"(?:call me|my (?:full )?name(?:'s| is)|i'm|i (?:like|prefer)(?: to be called)?|or)\s*([A-Za-z]+)"
+    nouns=set(extract_nouns(input))
+    names = set(re.findall(pattern, input, re.IGNORECASE))
+    return list(nouns|names)
 
-print(extract_names("Sure, my name's Effie but I prefer Eff"))

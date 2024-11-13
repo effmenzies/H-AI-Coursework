@@ -6,7 +6,7 @@ class Database:
         self.connection = sqlite3.connect(self.chatbot)
         self.cursor = self.connection.cursor()
         try:
-            self.cursor.execute('''CREATE TABLE UserInfo (userID integer primary key, name text, age integer, gender text)''')
+            self.cursor.execute('''CREATE TABLE UserInfo (userID integer primary key, name text, nickname text, age integer, gender text)''')
             self.connection.commit()
         except:
             pass
