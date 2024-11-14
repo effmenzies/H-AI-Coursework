@@ -10,6 +10,7 @@ from database import *
 from qanda import *
 from smalltalk import *
 from user_input import *
+from intent import *
 
 class Chatbot:
     def __init__(self, database):
@@ -18,21 +19,24 @@ class Chatbot:
         nltk.download('wordnet')
         nltk.download('averaged_perceptron_tagger_eng')
         nltk.download('universal_target')
-        build_dt_matrix(questions)
-        smalltalk_init('smalltalk')
+        intent_init()
+        qanda_init()
+        clf_init()
     
     def main(self):
         database = Database(self.name)
         database.connect()
         prompts = ["How are you today?","What's the weather like today?","What's the time?","What can you do for me?",
                    "What's your favourite food?","Recommend things to do near me."]
+        tasks = ["Have a chat","Answer questions","Recommend music","Make a booking","Set a reminder"]
         try:
-            #check if user  1 exists
-            database.sqlexecute('''SELECT * FROM UserInfo WHERE userID=1''')
-            user = database.cursor.fetchone()
             userName=None
             userInput=None
             print(f"<{self.name}>: Hi! My name is {self.name}.")
+
+            #check if user  1 exists
+            database.sqlexecute('''SELECT * FROM UserInfo WHERE userID=1''')
+            user = database.cursor.fetchone()
             if user:
                 #greet user
                 userName = user[1]
@@ -52,13 +56,13 @@ class Chatbot:
                         print(f"And {nickName} as a nickname.")
                     print(f"Is this correct?")
                     userInput = input("<you>: ")
-                    if match_output(userInput, 'smalltalk') in ('confirmation_yes','agent_right'):
+                    if cosine_sim(userInput, 'confirmations') == 'yes':
                         while not nickName:
                             print(f"<{self.name}>: Is {fullName} your preferred name?")
                             userInput = input("<you>: ")
-                            if match_output(userInput, 'smalltalk') in ('confirmation_yes','agent_right'):
+                            if cosine_sim(userInput, 'confirmations') == 'yes':
                                 nickName=fullName
-                            elif match_output(userInput, 'smalltalk') in ('confirmation_no','agent_wrong'):
+                            elif cosine_sim(userInput, 'confirmations') == 'no':
                                 print(f"<{self.name}>: What is your prefered name?")
                                 userInput = input("<you>: ")
                                 nickName = extract_names(userInput)[0]
@@ -74,26 +78,69 @@ class Chatbot:
                     else:
                         print(f"<{self.name}>: Sorry, I misunderstood.")
             while True:
-                #main loop
+                #introductory loop
                 if userInput == 'exit':
                         print(f"<{self.name}>: Goodbye!")
                         break
                 print(f"<{self.name}>: How can I help you today?")
                 print(f"\033[3m\033[34mNot sure what to ask?\nTry:\n{random.choice(prompts)}\033[0m")
                 while True:
-                    #conversation loop
+                    #main loop
                     userInput = input(f"<{userName}>: ").lower()
-
                     if userInput == 'exit':
                         break
-
-                    output = find_response(userInput)
-                    while not output:
-                        print(f"<{self.name}>: I didn't understand that, can you say it again?")
-                        userInput = input(f"<{user[1]}>: ").lower()
-                        output = find_response(userInput)
-                        if output:
+                    intent = classify(userInput)
+                    while intent=='smalltalk':
+                        #smalltalk loop
+                        i = cosine_sim(userInput,'greetings') #check intent
+                        if i == 'discover': #select an option from a list
+                            print(f"<{self.name}>: These are some of the things I can do for you:\033[3m\033[34m")
+                            for t in tasks:
+                                print(f"\n{t}")
+                            print(f"\033[0m\nWhat would you like to do?")
+                            while True:
+                                #choose an option loop
+                                userInput = input(f"<{userName}>: ").lower()
+                                if userInput == 'exit':
+                                    break
+                                elif userInput in 'have a chat':
+                                    intent = 'smalltalk'
+                                    print(f"<{self.name}>: Certainly.\nHow is your day going?")
+                                    userInput = input(f"<{userName}>: ").lower()
+                                    break
+                                elif userInput in 'answer questions':
+                                    intent = 'qanda'
+                                    print(f"<{self.name}>: What would you like to know?")
+                                    userInput = input(f"<{userName}>: ").lower()
+                                    break
+                                else:
+                                    print(f"<{self.name}>: I didn't understand that, can you say it again?") #loops until an option is selected or user exits
+                        elif i == 'me':
+                            print(f"<{self.name}>: So you want to talk about yourself.")
+                            #talk about user
+                        intent=classify(userInput)
+                        if intent=='smalltalk': #incase intent changed
+                            output = find_response(userInput)
+                            print(f"<{self.name}>: {output}")
+                            userInput = input(f"<{userName}>: ").lower()
+                            intent = classify(userInput) #update condition
+                        if userInput == 'exit':
                             break
-                    print(f"<{self.name}>: {output}")
+                        
+                    while intent=='qanda':
+                        #qanda loop
+                        intent=classify(userInput)
+                        output = cosine_sim_answer(userInput,'qanda')
+                        print(f"<{self.name}>: {output}")
+                        userInput = input(f"<{userName}>: ").lower()
+                        if userInput == 'exit':
+                            break
+
         finally:
             database.connection.close()
+
+'''
+                        elif i == 'you':
+                            print(f"<{self.name}>: So you want to talk about me.")
+                            #talk about the bot
+                        '''

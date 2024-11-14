@@ -8,17 +8,36 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import cosine_similarity
 
-def create_response_dataset():
-    df = pd.read_csv('data/intent_responses.csv')
-    joblib.dump(df, 'smalltalk/intent_output_df.joblib')
+def create_df(filename):
+    df = pd.read_csv(f'data/{filename}.csv')
+    joblib.dump(df, f'dfs/{filename}.joblib')
     return True
 
-def create_smalltalk_dataset():
-    smalltalk_df = pd.read_csv('data/smalltalk_intent.csv')
-    smalltalk_df['Output'] = smalltalk_df['Intent'].str.split('_').str[1:].apply('_'.join)
-    smalltalk_df = smalltalk_df.drop_duplicates()
-    joblib.dump(smalltalk_df, 'smalltalk/utterance_intent_df.joblib')
+def stemmer_nosw(doc):
+    stem = PorterStemmer()
+    analyzer = TfidfVectorizer().build_analyzer()
+    return [stem.stem(w) for w in analyzer(doc)]
+
+def create_dt_matrix(filename):
+    df = joblib.load(f'dfs/{filename}.joblib')
+    vect = TfidfVectorizer(use_idf=True, sublinear_tf=True, analyzer=stemmer_nosw, lowercase=True)
+    matrix = vect.fit_transform(df['Utterance'].values)
+    joblib.dump(matrix,f'dtm/{filename}.joblib')
+    joblib.dump(vect,f'vects/{filename}.joblib')
     return True
+
+def cosine_sim(input, filename):
+    vect = joblib.load(f'vects/{filename}.joblib')
+    dtm = joblib.load(f'dtm/{filename}.joblib')
+    df = joblib.load(f'dfs/{filename}.joblib')
+    similarities = cosine_similarity(vect.transform([input]), dtm).flatten()
+    match = similarities.argsort()[-1:]
+    return df.iloc[match]['Intent'].values[0]
+    
+def intent_init():
+    for filename in ['confirmations','greetings','user']:
+        create_df(filename)
+        create_dt_matrix(filename)
 
 def create_classifier(dataset):
     df = joblib.load(f'{dataset}/utterance_intent_df.joblib')
@@ -31,7 +50,7 @@ def create_classifier(dataset):
     joblib.dump(clf, f'{dataset}/clf.joblib')
     joblib.dump(vect, f'{dataset}/clf_vect.joblib')
     return True
-'''
+
 def create_intent_dfs(dataset):
     df = joblib.load(f'{dataset}/df.joblib')
     labels = set(df['Intent'])
@@ -41,10 +60,6 @@ def create_intent_dfs(dataset):
     joblib.dump(df_dict, f'{dataset}/intent_df_dict.joblib')
     return True
 
-def stemmer(doc):
-    stem = PorterStemmer()
-    analyzer = TfidfVectorizer(stop_words=stopwords.words('english')).build_analyzer()
-    return [stem.stem(w) for w in analyzer(doc)]
 
 def create_vectors(df):
     vect = TfidfVectorizer(use_idf=True, sublinear_tf=True, analyzer=stemmer, lowercase=True)
@@ -59,10 +74,6 @@ def build_dt_matrices(dataset):
         joblib.dump(vect, f"{dataset}/vectors/{df}_vectorizer.joblib")
     return True
 
-def cosine_sim(intent, input, dataset):
-    vect = joblib.load(f'{dataset}/vectors/{intent}_vectorizer.joblib')
-    vectors = joblib.load(f'{dataset}/vectors/{intent}_vectors.joblib')
-    return cosine_similarity(vect.transform([input]), vectors).flatten()
 
 def redacted(input, dataset):
     similarities = cosine_sim(intent, input, dataset)
@@ -71,7 +82,7 @@ def redacted(input, dataset):
     df_dict = joblib.load(f'{dataset}/intent_df_dict.joblib')
     intents = df_dict[intent]['Output'].values
     return intents[best_match]
-'''
+
 def match_output(input, dataset):
     vect = joblib.load(f'{dataset}/clf_vect.joblib')
     clf = joblib.load(f'{dataset}/clf.joblib')

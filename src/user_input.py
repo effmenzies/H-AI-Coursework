@@ -34,8 +34,12 @@ def extract_nouns(input):
     return [word[0] for word in tag_input(input) if (word[1]=='NOUN') and (word[0]!='name') and (word[0]!='hello')]
 
 def extract_names(input):
-    pattern = r"(?:call me|my (?:full )?name(?:'s| is)|i'm|i (?:like|prefer)(?: to be called)?|or)\s*([A-Za-z]+)"
-    nouns=set(extract_nouns(input))
-    names = set(re.findall(pattern, input, re.IGNORECASE))
-    return list(nouns|names)
-
+    pattern1 = r"(?:call me|my (?:full )?name(?:'s| is)|(?:,?\s*but )?(?:i(?:'m|'d| would)?)?(?:(?:my )?friends)?\s*(?:prefer|rather|like|am|call me)?\s*(?:(?:to )?(?:be )?(?:called)?)?|\s*or|my\s+nick\s*name\s+is)?\s*([A-Za-z]+)(?:,? for short)?"
+    names=[]
+    name1 = re.search(pattern1, input, re.IGNORECASE)
+    name2 = re.search(pattern1,input[name1.end():], re.IGNORECASE)
+    if name1:
+        names.append(name1.group(1))
+        if name2:
+            names.append(name2.group(1))
+    return names

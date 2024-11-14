@@ -11,33 +11,40 @@ from nltk.corpus import stopwords
 import joblib
 from sklearn.metrics.pairwise import cosine_similarity
 
-stem = PorterStemmer()
-analyzer = TfidfVectorizer(stop_words=stopwords.words('english')).build_analyzer()
-punctuation = string.punctuation
-dataset = pd.read_csv('data/QAdataset.csv')
-joblib.dump(dataset,'qanda_df.joblib')
-questions = dataset['Question'].values
+from smalltalk import *
 
-def stemmer(doc):
-    return (stem.stem(w) for w in analyzer(doc))
+def stemmer_sw(doc):
+    stem = PorterStemmer()
+    analyzer = TfidfVectorizer(stop_words=stopwords.words('english')).build_analyzer()
+    return [stem.stem(w) for w in analyzer(doc)]
 
-stem_vectorizer = TfidfVectorizer(analyzer=stemmer)
+def create_dt_matrix(filename):
+    df = joblib.load(f'dfs/{filename}.joblib')
+    vect = TfidfVectorizer(use_idf=True, sublinear_tf=True, analyzer=stemmer_sw, lowercase=True)
+    matrix = vect.fit_transform(df['Answer'].values)
+    joblib.dump(matrix,f'dtm/{filename}_a.joblib')
+    joblib.dump(vect,f'vects/{filename}_a.joblib')
+    matrix = vect.fit_transform(df['Question'].values)
+    joblib.dump(matrix,f'dtm/{filename}_q.joblib')
+    joblib.dump(vect,f'vects/{filename}_q.joblib')
 
-def build_dt_matrix(documents):
-    vectors = stem_vectorizer.fit_transform(documents)
-    joblib.dump(vectors, 'qanda_vectors.joblib')
-    return
+def cosine_sim_answer(input, filename):
+    vect = joblib.load(f'vects/{filename}_a.joblib')
+    dtm = joblib.load(f'dtm/{filename}_a.joblib')
+    df = joblib.load(f'dfs/{filename}.joblib')
+    similarities = cosine_similarity(vect.transform([input]), dtm).flatten()
+    match = similarities.argsort()[-1:]
+    return df.iloc[match]['Answer'].values[0]
 
-def transform_input(input):
-    return stem_vectorizer.transform(input)
+def cosine_sim_question(input,filename):
+    vect = joblib.load(f'vects/{filename}_q.joblib')
+    dtm = joblib.load(f'dtm/{filename}_q.joblib')
+    df = joblib.load(f'dfs/{filename}.joblib')
+    similarities = cosine_similarity(vect.transform([input]), dtm).flatten()
+    match = similarities.argsort()[-1:]
+    return df.iloc[match]['Question'].values[0]
 
-def q_similarity(query):
-    vectors = joblib.load('qanda_vectors.joblib')
-    return cosine_similarity(query, vectors).flatten()
-
-def qanda_search(query):
-    q = transform_input([query]).toarray()
-    similarities = q_similarity(q)
-    index = np.argmax(similarities)
-    qanda_df = joblib.load('qanda_df.joblib')
-    return qanda_df['Answer'].iloc[index]
+def qanda_init():
+    for filename in ['qanda']:
+        create_df(filename)
+        create_dt_matrix(filename)

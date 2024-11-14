@@ -1,8 +1,115 @@
-Greeting,Mapping
+Utterance,Intent
+bye,bye
+goodbye,bye
+good bye,bye
+see you,bye
+see ya,bye
+bye-bye,bye
+adios,bye
+see you soon,bye
+got to go,bye
+gtg,bye
+i'm off,bye
+take care,bye
+later,bye
+see you later,bye
+see you tomorrow,bye
+goodnight,bye
+good night,bye
+have a good night,bye
+night,bye
+see you tomorrow,bye
+hello,hello
 hi,hello
 hey,hello
-hello,hello
 hiya,hello
 hola,hello
+greetings,hello
+hi there,hello
 howdy,hello
-yo,hello
+hey there,hello
+hello there,hello
+heya,hello
+good day,hello
+bonjour,hello
+bonjourno,hello
+good morning,hello
+morning,hello
+top of the morning,hello
+good evening,hello
+evening,hello
+good afternoon,hello
+afternoon,hello
+how are you,be
+how is your morning,be
+how is your day,be
+are you alright,be
+alright,be
+are you ok,be
+how are things,be
+how is it going,be
+how's it going,be
+how are you doing,be
+how're you doing,be
+how're you,be
+how do you feel,be
+how goes it,be
+how's life,be
+you doing good,be
+how's your mood,be
+how is your evening,be
+how's your evening,be
+nice to meet you,meet
+honour to meet you,meet
+pleasure to meet you,meet
+lovely to meet you,meet
+glad to meet you,meet
+good to meet you,meet
+nice to see you,see
+lovely to see you,see
+pleasure to see you,see
+always a pleasure,see
+good to see you,see
+happy to see you,see
+nice to see you again,see
+glad to see you again,see
+what's up,do
+what is up,do
+wazzup,do
+what's happening,do
+what's occuring,do
+what is happening,do
+what are you doing,do
+what's cooking,do
+what's the crack,do
+what you saying,do
+what's going on,do
+wassup,do
+what's shaking,do
+who are you,you
+what are you,you
+are you a chatbot,you
+are you a robot,you
+are you real,you
+what is your name,you
+how old are you,you
+when were you born,you
+when were you made,you
+who made you,you
+who created you,you
+who am i,me
+what is my name,me
+do you know my name,me
+how old am i,me
+am i real,me
+tell me about myself,me
+what do you know about me,me
+when is my birthday,me
+what can you do,discover
+how can you help me,discover
+can you help me,discover
+what can you do to help me,discover
+can you help,discover
+what do you do,discover
+what are the options,discover
+what tasks can you do,discover

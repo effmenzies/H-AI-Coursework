@@ -1,0 +1,78 @@
+Utterance,Intent
+right,yes
+correct,yes
+yes,yes
+true,yes
+that's it,yes
+that's right,yes
+you're correct,yes
+you are right,yes
+certainly,yes
+that's good,yes
+that's fine,yes
+fine,yes
+yep,yes
+yeah,yes
+ye,yes
+ok,yes
+sure,yes
+yeah sure,yes
+go ahead,yes
+exactly,yes
+exactly right,yes
+okay,yes
+ok,yes
+yup,yes
+ya,yes
+of course,yes
+absolutely,yes
+yes indeed,yes
+indeed,yes
+confirm,yes
+definitely,yes
+for sure,yes
+alright,yes
+why not,yes
+sure thing,yes
+perfect,yes
+please,yes
+thanks,yes
+cancel,cancel
+stop,cancel
+abort,cancel
+disregard,cancel
+forget,cancel
+nevermind,cancel
+cancel it,cancel
+stop it,cancel
+end,cancel
+no,no
+not that,no
+incorrect,no
+wrong,no
+not right,no
+not that,no
+disagree,no
+it is not,no
+na,no
+not for me,no
+that's not it,no
+never,no
+nah,no
+no need,no
+no thanks,no
+no thank you,no
+no thankyou,no
+not today,no
+not anymore,no
+nope,no
+absoltely not,no
+false,no
+naa,no
+not now,no
+that's not right,no
+do not agree,no
+don't agree,no
+don't,no
+do not,no
+please no,no

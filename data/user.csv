@@ -1,0 +1,87 @@
+Utterance,Intent
+happy,good
+good,good
+great,good
+fine,good
+well,good
+ok,good
+i'm doing well,good
+i am well,good
+i'm good,good
+i am good,good
+i'm ok,good
+i'm great,good
+amazing,good
+i'm amazing,good
+simply divine,good
+i've never been better,good
+i feel fabulous,good
+fabulous,good
+fab,good
+i feel good,good
+i feel ok,good
+i'm happy,good
+i'm great thanks,good
+good thanks,good
+good thank you,good
+great thank you,good
+not too bad,good
+not too bad thanks,good
+sad,bad
+not good,bad
+depressed,bad
+unhappy,bad
+i'm not doing good,bad
+unwell,bad
+ill,bad
+i've been better,bad
+i'm having a bad day,bad
+i'm upset,bad
+not great,bad
+awful,bad
+really bad,bad
+terrible,bad
+lonely,bad
+alone,bad
+i feel lonely,bad
+i feel bad,bad
+tired,tired
+i'm sleepy,tired
+exhausted,tired
+weary,tired
+wiped,tired
+i'm tired,
+i'm wiped out,tired
+overworked,tired
+i'm worn out,tired
+i'm tired,tired
+i'm drained,tired
+drained,tired
+mad,angry
+pissed,angry
+enraged,angry
+i'm angry,angry
+i'm furious,angry
+furious,angry
+i'm mad at you,angry
+i'm pissed off,angry
+i'm tweaking,angry
+raging,angry
+i feel rage,angry
+rage,angry
+i'm bored,bored
+bored,bored
+i am bored,bored
+i am being bored,bored
+i'm getting bored,bored
+i have nothing to do,bored
+nothing to do,bored
+excited,excited
+i'm buzing,excited
+i'm excited,excited
+i am excited,excited
+i'm so excited,excited
+i'm thrilled,excited
+bouncing off the walls,excited
+i'm delighted,excited
+thrilled,excited
