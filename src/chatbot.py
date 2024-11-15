@@ -18,7 +18,6 @@ class Chatbot:
         self.sentiment = 0
         nltk.download('wordnet')
         nltk.download('averaged_perceptron_tagger_eng')
-        nltk.download('universal_target')
         intent_init()
         qanda_init()
         clf_init()
@@ -39,7 +38,7 @@ class Chatbot:
             user = database.cursor.fetchone()
             if user:
                 #greet user
-                userName = user[1]
+                userName = user[2]
                 print(f"\nTo exit the chat, type 'exit'\n")
                 print(f"<{self.name}>: Hi {userName}!")
             else:
@@ -48,11 +47,11 @@ class Chatbot:
                     print(f"What's your name?")
                     userInput = input("<you>: ")
                     names = extract_names(userInput)
-                    fullName = max(names)
+                    fullName = max(names).capitalize()
                     nickName = None
                     print(f"<{self.name}>: Hi, I've got your full name as {fullName}.")
                     if len(names)>1:
-                        nickName = min(names)
+                        nickName = min(names).capitalize()
                         print(f"And {nickName} as a nickname.")
                     print(f"Is this correct?")
                     userInput = input("<you>: ")
@@ -77,6 +76,7 @@ class Chatbot:
                         print(f"<{self.name}>: Hi {userName}!\n To exit the chat, type 'exit'.")
                     else:
                         print(f"<{self.name}>: Sorry, I misunderstood.")
+
             while True:
                 #introductory loop
                 if userInput == 'exit':
@@ -84,9 +84,9 @@ class Chatbot:
                         break
                 print(f"<{self.name}>: How can I help you today?")
                 print(f"\033[3m\033[34mNot sure what to ask?\nTry:\n{random.choice(prompts)}\033[0m")
+                userInput = input(f"<{userName}>: ").lower()
                 while True:
                     #main loop
-                    userInput = input(f"<{userName}>: ").lower()
                     if userInput == 'exit':
                         break
                     intent = classify(userInput)
@@ -116,8 +116,39 @@ class Chatbot:
                                 else:
                                     print(f"<{self.name}>: I didn't understand that, can you say it again?") #loops until an option is selected or user exits
                         elif i == 'me':
-                            print(f"<{self.name}>: So you want to talk about yourself.")
-                            #talk about user
+                            #get user info from database
+                            if 'name' in userInput:
+                                name, nickname = database.get_name()
+                                if name==nickname:
+                                    print(f"<{self.name}>: Your name is {name}. You don't have a nickname, would you like one?")
+                                    userInput = input(f"<{userName}>: ").lower()
+                                    if cosine_sim(userInput, 'confirmations') == 'no':
+                                        print(f"<{self.name}>: No worries!")
+                                    else:
+                                        while True:
+                                            #set nickname loop
+                                            print(f"<{self.name}>: What do you want to be called?")
+                                            userInput = input(f"<{userName}>: ")
+                                            name = extract_names(userInput)[0].capitalize()
+                                            print(f"<{self.name}>: Ok, do you want me to call you {name} from now on?")
+                                            userInput = input(f"<{userName}>: ").lower()
+                                            if cosine_sim(userInput, 'confirmations') == 'yes':
+                                                print(f"<{self.name}>: No worries!")
+                                                database.sqlexecute(f'''UPDATE userInfo SET nickname = ('{name}') WHERE userID=1''')
+                                                userName = name
+                                                userInput = input(f"<{userName}>: ")
+                                                break
+                                            else: print(f'<{self.name}>:Sorry I misunderstood.')
+                                        break
+                                else:
+                                    print(f"<{self.name}>: Your name is {nickname}, but your full name is {name}.")
+                                    userInput = input(f"<{userName}>: ")
+                                    break
+                            elif bool({'old','age','birthday'}&set(extract_info(userInput))):
+                                age, birthday = database.get_age()
+                                if not age and not birthday:
+                                    print(f"<{self.name}>: I don't know! When is your birthday?")
+                                    userInput = input(f"<{userName}>: ").lower()
                         intent=classify(userInput)
                         if intent=='smalltalk': #incase intent changed
                             output = find_response(userInput)
@@ -130,11 +161,12 @@ class Chatbot:
                     while intent=='qanda':
                         #qanda loop
                         intent=classify(userInput)
-                        output = cosine_sim_answer(userInput,'qanda')
-                        print(f"<{self.name}>: {output}")
-                        userInput = input(f"<{userName}>: ").lower()
-                        if userInput == 'exit':
-                            break
+                        if intent=='qanda':
+                            output = cosine_sim_answer(userInput,'qanda')
+                            print(f"<{self.name}>: {output}")
+                            userInput = input(f"<{userName}>: ").lower()
+                            if userInput == 'exit':
+                                break
 
         finally:
             database.connection.close()

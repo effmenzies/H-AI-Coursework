@@ -24,14 +24,15 @@ def lemmatize(input):
         if tag in tag_dict.keys():
             input_tokens.append(lem.lemmatize(word, tag_dict[tag]))
         else: input_tokens.append(lem.lemmatize(word))
-    return input_tokens
+    return " ".join(input_tokens)
 
 def tag_input(input):
     return nltk.pos_tag([word for word in word_tokenize(input) if word not in string.punctuation], tagset='universal')
 
-def extract_nouns(input):
-    input=remove_fluff(input)
-    return [word[0] for word in tag_input(input) if (word[1]=='NOUN') and (word[0]!='name') and (word[0]!='hello')]
+def extract_info(input):
+    input = lemmatize(input)
+    return [word[0] for word in tag_input(input) if (word[1] in ['NOUN','ADJ','PRON'])]
+
 
 def extract_names(input):
     pattern1 = r"(?:call me|my (?:full )?name(?:'s| is)|(?:,?\s*but )?(?:i(?:'m|'d| would)?)?(?:(?:my )?friends)?\s*(?:prefer|rather|like|am|call me)?\s*(?:(?:to )?(?:be )?(?:called)?)?|\s*or|my\s+nick\s*name\s+is)?\s*([A-Za-z]+)(?:,? for short)?"
@@ -43,3 +44,4 @@ def extract_names(input):
         if name2:
             names.append(name2.group(1))
     return names
+

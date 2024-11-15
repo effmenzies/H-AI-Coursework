@@ -1,4 +1,29 @@
 Utterances,Intent
+who am i?,smalltalk_agent_user
+what is my name?,smalltalk_agent_user
+what is my age?,smalltalk_agent_user
+how old am i?,smalltalk_agent_user
+do you know my name?,smalltalk_agent_user
+tell me about myself,smalltalk_agent_user
+what do you know about me?,smalltalk_agent_user
+what am i called?,smalltalk_agent_user
+what is my nickname?,smalltalk_agent_user
+what is my birthday?,smalltalk_agent_user
+where do i live?,smalltalk_agent_user
+where is my home?,smalltalk_agent_user
+my name,smalltalk_agent_user
+my age,smalltalk_agent_user
+am i old?,smalltalk_agent_user
+what gender am i?,smalltalk_agent_user
+am i male or female?,smalltalk_agent_user
+do you know who i am?,smalltalk_agent_user
+do you know me?,smalltalk_agent_user
+tell me my name,smalltalk_agent_user
+tell me my age,smalltalk_agent_user
+tell me my birthday,smalltalk_agent_user
+what's my name?,smalltalk_agent_user
+what's my age?,smalltalk_agent_user
+what's my birthdate?,smalltalk_agent_user
 who are you?,smalltalk_agent_acquaintance
 all about you,smalltalk_agent_acquaintance
 what is your personality,smalltalk_agent_acquaintance

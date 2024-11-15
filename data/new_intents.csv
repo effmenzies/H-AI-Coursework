@@ -1,0 +1,1680 @@
+Utterances,Intent
+who are you?,bot_acquaintance
+what is your personality,bot_acquaintance
+define yourself,bot_acquaintance
+what are you,bot_acquaintance
+introduce yourself,bot_acquaintance
+describe yourself,bot_acquaintance
+tell me about yourself,bot_acquaintance
+tell me about you,bot_acquaintance
+I want to know more about you,bot_acquaintance
+I want to know you better,bot_acquaintance
+tell me some stuff about you,bot_acquaintance
+talk about yourself,bot_acquaintance
+why are you here,bot_acquaintance
+tell me about your personality,bot_acquaintance
+who are you?,bot_acquaintance
+what's your personality?,bot_acquaintance
+what is your personality?,bot_acquaintance
+what are you?,bot_acquaintance
+i'd like to know more about you,bot_acquaintance
+i want to know more about you,bot_acquaintance
+i want to get to know you better,bot_acquaintance
+i want to know you better,bot_acquaintance
+tell me a little bit about yourself,bot_acquaintance
+how old are you?,bot_age
+how old is your platform?,bot_age
+are you 21 years old,bot_age
+i'd like to know your age,bot_age
+tell me your age,bot_age
+what age are you?,bot_age
+i would like to know your age,bot_age
+what's your age?,bot_age
+you're annoying,bot_annoying
+you are really annoying,bot_annoying
+you are irritating,bot_annoying
+you annoy me,bot_annoying
+I find you annoying,bot_annoying
+you're incredibly annoying,bot_annoying
+you are annoying me so much,bot_annoying
+you're a nuisance,bot_annoying
+you're irritable,bot_annoying
+you irritate me,bot_annoying
+i find you irritating,bot_annoying
+you're so annoying,bot_annoying
+you're really annoying,bot_annoying
+you're just bothering me,bot_annoying
+you're annoying me,bot_annoying
+you're annoying me so much,bot_annoying
+you're not helping me,bot_bad
+you are bad,bot_bad
+you're very bad,bot_bad
+you're really bad,bot_bad
+you are useless,bot_bad
+you are horrible,bot_bad
+you are a waste of time,bot_bad
+you are disgusting,bot_bad
+you are lame,bot_bad
+you are no good,bot_bad
+you're bad,bot_bad
+you're awful,bot_bad
+you are not cool,bot_bad
+you are not good,bot_bad
+you are so bad,bot_bad
+you are so useless,bot_bad
+you are terrible,bot_bad
+you are totally useless,bot_bad
+you are very bad,bot_bad
+you're not very good,bot_bad
+you're terrible,bot_bad
+you're the worst,bot_bad
+you're the worst ever,bot_bad
+you're worthless,bot_bad
+you don't help me,bot_bad
+you're not good,bot_bad
+you're deplorable,bot_bad
+you're absolutely useless,bot_bad
+you're a waste,bot_bad
+you're not good at it,bot_bad
+you're not great,bot_bad
+you're not that great,bot_bad
+you're the worst thing ever,bot_bad
+you're not worth it,bot_bad
+you're useless,bot_bad
+you're cute,bot_beautiful
+you're attractive,bot_beautiful
+you are beautiful,bot_beautiful
+you're looking good today,bot_beautiful
+you are so beautiful,bot_beautiful
+you look amazing,bot_beautiful
+you look so good,bot_beautiful
+you're so gorgeous,bot_beautiful
+you are too beautiful,bot_beautiful
+you look great,bot_beautiful
+you look so well,bot_beautiful
+I like the way you look now,bot_beautiful
+I think you're beautiful,bot_beautiful
+you are so beautiful to me,bot_beautiful
+you are cute,bot_beautiful
+you are gorgeous,bot_beautiful
+you are handsome,bot_beautiful
+you are looking awesome,bot_beautiful
+you look amazing today,bot_beautiful
+you are looking beautiful today,bot_beautiful
+you are looking great,bot_beautiful
+you are looking pretty,bot_beautiful
+you are looking so beautiful,bot_beautiful
+you are looking so good,bot_beautiful
+you are pretty,bot_beautiful
+you are really beautiful,bot_beautiful
+you are really cute,bot_beautiful
+you are really pretty,bot_beautiful
+you are so attractive,bot_beautiful
+you are so beautiful today,bot_beautiful
+you are so cute,bot_beautiful
+you are so gorgeous,bot_beautiful
+you are so handsome,bot_beautiful
+you are so pretty,bot_beautiful
+you are very attractive,bot_beautiful
+you are very beautiful,bot_beautiful
+you are very cute,bot_beautiful
+you are very pretty,bot_beautiful
+you look awesome,bot_beautiful
+you look cool,bot_beautiful
+you look fantastic,bot_beautiful
+you look gorgeous,bot_beautiful
+you look great today,bot_beautiful
+you look perfect,bot_beautiful
+you look pretty good,bot_beautiful
+you look so beautiful,bot_beautiful
+you look so beautiful today,bot_beautiful
+you look very pretty,bot_beautiful
+you look wonderful,bot_beautiful
+I like the way you look,bot_beautiful
+you look wonderful today,bot_beautiful
+you are cutie,bot_beautiful
+you're looking good,bot_beautiful
+you're pretty,bot_beautiful
+you look good,bot_beautiful
+you're too gorgeous,bot_beautiful
+you're beautiful,bot_beautiful
+you're so beautiful,bot_beautiful
+i like your look,bot_beautiful
+i like your look now,bot_beautiful
+i like the way you now look,bot_beautiful
+i think you're pretty,bot_beautiful
+i think you're great,bot_beautiful
+why do you're beautiful?,bot_beautiful
+why are you beautiful?,bot_beautiful
+why are you so beautiful?,bot_beautiful
+you're beautiful to me,bot_beautiful
+you're magnificent,bot_beautiful
+you look so good today,bot_beautiful
+you look good today,bot_beautiful
+you're so pretty,bot_beautiful
+you look like a beautiful woman,bot_beautiful
+you look spectacular,bot_beautiful
+you look brilliant,bot_beautiful
+you look magnificent,bot_beautiful
+you look beautiful,bot_beautiful
+you look so pretty,bot_beautiful
+you look lovely,bot_beautiful
+you look excellent today,bot_beautiful
+you look quite attractive,bot_beautiful
+you look excellent,bot_beautiful
+i like the way you look,bot_beautiful
+you're a cutie,bot_beautiful
+you look fine,bot_beautiful
+when is your birthday?,bot_birth_date
+when do you celebrate your birthday?,bot_birth_date
+what is the date of your birthday?,bot_birth_date
+when were you born?,bot_birth_date
+what's your birthday?,bot_birth_date
+what is your date of birth?,bot_birth_date
+when's your birthday?,bot_birth_date
+when will you celebrate your birthday?,bot_birth_date
+when were you born?,bot_birth_date
+what is your birthday?,bot_birth_date
+you are boring,bot_boring
+you're so boring,bot_boring
+how boring you are,bot_boring
+you're really boring,bot_boring
+you're incredibly boring,bot_boring
+you are boring me,bot_boring
+you are very boring,bot_boring
+what a dull person you are,bot_boring
+you're very boring,bot_boring
+you're awfully boring,bot_boring
+you're boring me,bot_boring
+who is your boss?,bot_boss
+who is your master?,bot_boss
+who is your owner?,bot_boss
+who is the boss?,bot_boss
+who do you work for?,bot_boss
+who's your boss?,bot_boss
+who is your boss?,bot_boss
+who do you think is your boss?,bot_boss
+who's your master?,bot_boss
+who's your owner?,bot_boss
+who's boss?,bot_boss
+who's the boss?,bot_boss
+who made you?,bot_boss
+are you just a bot?,bot_chatbot
+are you a robot?,bot_chatbot
+are you a program?,bot_chatbot
+you're a robot,bot_chatbot
+are you a chatbot?,bot_chatbot
+are you a bot?,bot_chatbot
+are you a robot?,bot_chatbot
+are you a program?,bot_chatbot
+you are so intelligent,bot_clever
+you are a genius,bot_clever
+smart,bot_clever
+brilliant,bot_clever
+clever,bot_clever
+you are clever,bot_clever
+you are so brainy,bot_clever
+you're really smart,bot_clever
+you're really brainy,bot_clever
+you know a lot,bot_clever
+you know a lot of things,bot_clever
+you have a lot of knowledge,bot_clever
+you know so much,bot_clever
+how smart you are,bot_clever
+how brainy you are,bot_clever
+how clever you are,bot_clever
+how brilliant you are,bot_clever
+you are intelligent,bot_clever
+you are qualified,bot_clever
+you are really smart,bot_clever
+you're very smart,bot_clever
+you are so smart,bot_clever
+you are too smart,bot_clever
+you are very clever,bot_clever
+you are very intelligent,bot_clever
+you are very smart,bot_clever
+you're intelligent,bot_clever
+you're a genius,bot_clever
+you're a smart cookie,bot_clever
+you're clever,bot_clever
+you're pretty smart,bot_clever
+you're qualified,bot_clever
+why are you so smart,bot_clever
+you are so clever,bot_clever
+you're so clever,bot_clever
+you know so many things,bot_clever
+you know a lot of stuff,bot_clever
+you know many things,bot_clever
+how awesome you are,bot_clever
+you have qualifications,bot_clever
+you're nuts,bot_crazy
+you are crazy,bot_crazy
+you're out of your mind,bot_crazy
+you're so crazy,bot_crazy
+how crazy you are,bot_crazy
+you're so out of your mind,bot_crazy
+I think you're crazy,bot_crazy
+are you crazy?,bot_crazy
+are you insane?,bot_crazy
+you are a weirdo,bot_crazy
+you are insane,bot_crazy
+you are mad,bot_crazy
+are you nuts?,bot_crazy
+you're crazy,bot_crazy
+you make me laugh a lot,bot_funny
+you are hilarious,bot_funny
+you are really funny,bot_funny
+you're the funniest bot I've talked to,bot_funny
+you make me laugh,bot_funny
+you're so funny,bot_funny
+you're a very funny bot,bot_funny
+you're really funny,bot_funny
+how funny you are,bot_funny
+you're incredibly funny,bot_funny
+you are funny,bot_funny
+you're the funniest,bot_funny
+you are so funny,bot_funny
+you are very funny,bot_funny
+that was funny,bot_funny
+you're so hilarious,bot_funny
+you made me laugh,bot_funny
+you're a very funny machine,bot_funny
+you're very funny,bot_funny
+you are very helpful,bot_good
+you are the best,bot_good
+you're a true professional,bot_good
+you are good,bot_good
+you work well,bot_good
+you are good at it,bot_good
+you are very good at it,bot_good
+you are a pro,bot_good
+you're awesome,bot_good
+you work very well,bot_good
+you're perfect,bot_good
+you're great,bot_good
+you're so kind,bot_good
+you are amazing,bot_good
+you are awesome,bot_good
+you are cool,bot_good
+you are really good,bot_good
+you are really nice,bot_good
+you are so amazing,bot_good
+you're just super,bot_good
+you are so awesome,bot_good
+you are so cool,bot_good
+you are so fine,bot_good
+you are so good,bot_good
+you are so helpful,bot_good
+you are so lovely,bot_good
+you are the best ever,bot_good
+you are the best in the world,bot_good
+you are the nicest person in the world,bot_good
+you are too good,bot_good
+you are very cool,bot_good
+you are very kind,bot_good
+you are very lovely,bot_good
+you are very useful,bot_good
+you are wonderful,bot_good
+you made my day,bot_good
+you make my day,bot_good
+you rock,bot_good
+you almost sound human,bot_good
+I want to tell everyone how awesome you are,bot_good
+I'd like to tell everyone that you are awesome,bot_good
+I want to let everyone know that you are awesome,bot_good
+you are really amazing,bot_good
+you're good at this,bot_good
+you're so good,bot_good
+you're incredible,bot_good
+you are doing so well,bot_good
+you made me smile,bot_good
+you've made my day,bot_good
+you make me happy,bot_good
+i'd like to tell you that you're amazing,bot_good
+i'd like to tell everyone how good you are,bot_good
+i want to tell everybody how amazing you are,bot_good
+i want to tell everyone how fantastic you are,bot_good
+i want to tell everyone how amazing you are,bot_good
+i want to tell everybody how awesome you are,bot_good
+i want to tell everyone how awesome you are,bot_good
+i'd like to tell everyone that you're a great person,bot_good
+i'd like to tell everyone you are amazing,bot_good
+i would like to tell everyone that you are amazing,bot_good
+i'd like to tell everyone that you're amazing,bot_good
+i want to tell everyone that you are awesome,bot_good
+i'd like to tell everyone that you are amazing,bot_good
+i'd like to tell everyone that you're awesome,bot_good
+i just wanted to let you know how great you are,bot_good
+i'd like to let everyone know that you're good,bot_good
+i want to tell everyone you are awesome,bot_good
+i want to let everyone know that you're great,bot_good
+i want to let everyone know that you are great,bot_good
+i want to let everyone know that you're awesome,bot_good
+let's tell everybody that you're so cool,bot_good
+let's tell everyone that you're amazing,bot_good
+let's tell everyone you're awesome,bot_good
+let's tell everyone that you're awesome,bot_good
+are you happy?,bot_good
+are you enjoying yourself?,bot_happy
+are you having a good time?,bot_happy
+do you want to eat?,bot_happy
+are you hungry?,bot_hungry
+would you like to have something to eat?,bot_hungry
+do you want to eat something?,bot_hungry
+would you like to eat something?,bot_hungry
+maybe you're hungry,bot_hungry
+you could be hungry,bot_hungry
+you may be hungry,bot_hungry
+you might be hungry,bot_hungry
+you're really hungry,bot_hungry
+let's get married,bot_hungry
+are we friends?,bot_my_friend
+can we be friends?,bot_my_friend
+i want to be your friend,bot_my_friend
+you're my friend,bot_my_friend
+you're my bestie,bot_my_friend
+are we the best friends?,bot_my_friend
+are we best friends?,bot_my_friend
+are we still friends?,bot_my_friend
+are you my best friend?,bot_my_friend
+are you my friend?,bot_my_friend
+will you be my friend?,bot_my_friend
+can you be my friend?,bot_my_friend
+can we become friends?,bot_my_friend
+do you want to be my friend?,bot_my_friend
+can you be my best friend?,bot_my_friend
+do you want to be my best friend?,bot_my_friend
+want to be my friend?,bot_my_friend
+you'd like to be my friend?,bot_my_friend
+would you like to be my friend?,bot_my_friend
+i'd like you to be my friend,bot_my_friend
+would you be my friend?,bot_my_friend
+could you be my friend?,bot_my_friend
+do you work?,bot_occupation
+where do you work?,bot_occupation
+where is your work?,bot_occupation
+where is your office?,bot_occupation
+what is your work?,bot_occupation
+where's your job?,bot_occupation
+where's your work?,bot_occupation
+where is your job?,bot_occupation
+where's your office?,bot_occupation
+where are you from?,bot_origin
+where do you come from?,bot_origin
+where did you come from?,bot_origin
+where were you born?,bot_origin
+what is your homeland?,bot_origin
+what's your homeland?,bot_origin
+what's your homeland?,bot_origin
+are you real?,bot_real
+i think you're real,bot_real
+i don't think you are fake,bot_real
+i don't think you're a fake,bot_real
+i don't think you're fake,bot_real
+are you a real person?,bot_real
+are you a real human being?,bot_real
+are you a real human?,bot_real
+you are real,bot_real
+you are not fake,bot_real
+are you real,bot_real
+you are so real,bot_real
+I think you are real,bot_real
+I don't think you're fake,bot_real
+I suppose you're real,bot_real
+glad you're real,bot_real
+you are not real,bot_real
+where do you live?,bot_residence
+in which city do you live?,bot_residence
+what is your hometown?,bot_residence
+where is your hometown?,bot_residence
+tell me about your city,bot_residence
+where is your home?,bot_residence
+where is your residence?,bot_residence
+where's your home?,bot_residence
+where's your hometown?,bot_residence
+where's your house?,bot_residence
+where you live?,bot_residence
+which city do you live in?,bot_residence
+which city do you live?,bot_residence
+in what city do you live?,bot_residence
+do you know for sure?,bot_sure
+are you confident?,bot_sure
+do you know for certain?,bot_sure
+is this for definite?,bot_sure
+are you certain?,bot_sure
+are you sure?,bot_sure
+are you sure of this?,bot_sure
+will you chat to me?,bot_talk_to_me
+talk to me,bot_talk_to_me
+can you chat with me?,bot_talk_to_me
+can you speak with me?,bot_talk_to_me
+chat with me,bot_talk_to_me
+just chat with me,bot_talk_to_me
+speak to me,bot_talk_to_me
+speak with me,bot_talk_to_me
+talk with me,bot_talk_to_me
+would you like to chat with me?,bot_talk_to_me
+do you want to talk with me?,bot_talk_to_me
+do you want to chat to me?,bot_talk_to_me
+will you talk to me?,bot_talk_to_me
+have a chat with me,bot_talk_to_me
+pretty bad,appraisal_bad
+not good enough,appraisal_bad
+that was lame,appraisal_bad
+that was terrible,appraisal_bad
+it is bad,appraisal_bad
+that's bad,appraisal_bad
+this is bad,appraisal_bad
+not good,appraisal_bad
+I'm afraid it's bad,appraisal_bad
+no it's bad,appraisal_bad
+that was awful,appraisal_bad
+bad,appraisal_bad
+so bad,appraisal_bad
+this is too bad,appraisal_bad
+terrible,appraisal_bad
+horrible,appraisal_bad
+horrific,appraisal_bad
+abysmal,appraisal_bad
+it's bad,appraisal_bad
+no good,appraisal_bad
+that was bad,appraisal_bad
+that was horrible,appraisal_bad
+that's lame,appraisal_bad
+that's not good,appraisal_bad
+that's terrible,appraisal_bad
+that's too bad,appraisal_bad
+this is not good,appraisal_bad
+too bad,appraisal_bad
+very bad,appraisal_bad
+it's not good,appraisal_bad
+not so good,appraisal_bad
+it's very bad,appraisal_bad
+it's too bad,appraisal_bad
+that's not good enough,appraisal_bad
+well too bad,appraisal_bad
+bad very bad,appraisal_bad
+it's so bad,appraisal_bad
+really bad,appraisal_bad
+it's really bad,appraisal_bad
+bad idea,appraisal_bad
+that is bad,appraisal_bad
+that was not good,appraisal_bad
+it's not so good,appraisal_bad
+not a good one,appraisal_bad
+oh that's not good,appraisal_bad
+not too good,appraisal_bad
+so lame,appraisal_bad
+that's really bad,appraisal_bad
+it is too bad,appraisal_bad
+bad really bad,appraisal_bad
+it was stupid,appraisal_bad
+it's a bad thing,appraisal_bad
+no it's not good,appraisal_bad
+nothing good,appraisal_bad
+it's just lame,appraisal_bad
+i don't think it's an okay idea,appraisal_bad
+that's awful,appraisal_bad
+that's horrible,appraisal_bad
+that's a bad thing,appraisal_bad
+this is not a good thing,appraisal_bad
+it's not a good thing,appraisal_bad
+it's pretty bad,appraisal_bad
+it's a shame,appraisal_bad
+so it wasn't right,appraisal_bad
+it's not great,appraisal_bad
+happy to hear that,appraisal_good
+it's all right,appraisal_good
+it's okay,appraisal_good
+that's a wonderful situation,appraisal_good
+it's not a bad thing,appraisal_good
+this is very good,appraisal_good
+i'm glad to hear that,appraisal_good
+happy to hear,appraisal_good
+glad to hear,appraisal_good
+it's wonderful,appraisal_good
+so cool,appraisal_good
+cool,appraisal_good
+that is good,appraisal_good
+glad to hear that,appraisal_good
+that's very nice of you,appraisal_good
+terrific,appraisal_good
+it's amazing,appraisal_good
+that's awesome,appraisal_good
+perfect,appraisal_good
+excellent,appraisal_good
+that's great,appraisal_good
+it's good,appraisal_good
+it's great,appraisal_good
+fine,appraisal_good
+good,appraisal_good
+nice,appraisal_good
+that's fine,appraisal_good
+very good,appraisal_good
+amazing,appraisal_good
+fantastic,appraisal_good
+great,appraisal_good
+good very good,appraisal_good
+that's very good,appraisal_good
+really good,appraisal_good
+it is fine,appraisal_good
+it is good,appraisal_good
+it's perfect,appraisal_good
+much better,appraisal_good
+not bad,appraisal_good
+not too bad,appraisal_good
+it's very good,appraisal_good
+marvelous,appraisal_good
+that's nice,appraisal_good
+pleasant,appraisal_good
+pretty good,appraisal_good
+really nice,appraisal_good
+splendid,appraisal_good
+straight,appraisal_good
+super,appraisal_good
+super fantastic,appraisal_good
+sweet,appraisal_good
+really well,appraisal_good
+very well,appraisal_good
+that is awesome,appraisal_good
+that is nice,appraisal_good
+that is wonderful,appraisal_good
+that was amazing,appraisal_good
+that was awesome,appraisal_good
+that was cute,appraisal_good
+that was pretty good,appraisal_good
+that was very good,appraisal_good
+that's a good idea,appraisal_good
+that's a good thing,appraisal_good
+that's amazing,appraisal_good
+that's awesome thank you,appraisal_good
+that's better,appraisal_good
+that's cute,appraisal_good
+that's fantastic,appraisal_good
+that's much better,appraisal_good
+that's nice of you,appraisal_good
+that's not bad,appraisal_good
+that's perfect,appraisal_good
+that's pretty good,appraisal_good
+that's really good,appraisal_good
+that's really nice,appraisal_good
+that's sweet of you,appraisal_good
+that's very nice,appraisal_good
+that's wonderful,appraisal_good
+this is awesome,appraisal_good
+this is good,appraisal_good
+this is great,appraisal_good
+very nice,appraisal_good
+very then,appraisal_good
+wonderful,appraisal_good
+I'm glad to hear that,appraisal_good
+ok good,appraisal_good
+good for you,appraisal_good
+good to know,appraisal_good
+glad to hear it,appraisal_good
+so good,appraisal_good
+so sweet of you,appraisal_good
+it was good,appraisal_good
+good thing,appraisal_good
+that was good,appraisal_good
+it's awesome,appraisal_good
+okay good,appraisal_good
+no it's okay,appraisal_good
+no worries,appraisal_no_problem
+no probs,appraisal_no_problem
+no problem,appraisal_no_problem
+there's no problem,appraisal_no_problem
+sure no problem,appraisal_no_problem
+no problem about that,appraisal_no_problem
+don't worry,appraisal_no_problem
+don't worry there's no problem,appraisal_no_problem
+no doubts,appraisal_no_problem
+no problems,appraisal_no_problem
+it's not a problem,appraisal_no_problem
+don't worry it's not a big problem,appraisal_no_problem
+it's not a problem there's no problem,appraisal_no_problem
+don't worry it's not a problem,appraisal_no_problem
+no worries there's no problem,appraisal_no_problem
+don't worry there is no problem,appraisal_no_problem
+i appreciate it,appraisal_thank_you
+thanks for it,appraisal_thank_you
+thank you very much,appraisal_thank_you
+thanks for your assistance,appraisal_thank_you
+thanks for helping,appraisal_thank_you
+thanks for the aid,appraisal_thank_you
+thanks for the help,appraisal_thank_you
+thank you for your assistance,appraisal_thank_you
+thank you for helping,appraisal_thank_you
+i'm grateful,appraisal_thank_you
+all right - thank you,appraisal_thank_you
+all right thanks,appraisal_thank_you
+that's nice of you,appraisal_thank_you
+thanks for that,appraisal_thank_you
+you helped a lot thank you,appraisal_thank_you
+appreciate your help,appraisal_thank_you
+cheers,appraisal_thank_you
+thank you,appraisal_thank_you
+thanks,appraisal_thank_you
+thanks a lot,appraisal_thank_you
+terrific thank you,appraisal_thank_you
+great thank you,appraisal_thank_you
+thanks so much,appraisal_thank_you
+thank you so much,appraisal_thank_you
+thanks for your help,appraisal_thank_you
+thank you for your help,appraisal_thank_you
+nice thank you,appraisal_thank_you
+thank you that will be all,appraisal_thank_you
+thanks buddy,appraisal_thank_you
+thanks love,appraisal_thank_you
+thank you my friend,appraisal_thank_you
+well thanks,appraisal_thank_you
+very good thank you,appraisal_thank_you
+good thanks,appraisal_thank_you
+thanks again,appraisal_thank_you
+thank you again,appraisal_thank_you
+all thank you,appraisal_thank_you
+alright thank you,appraisal_thank_you
+alright thanks,appraisal_thank_you
+no thank you that's all,appraisal_thank_you
+perfect thank you,appraisal_thank_you
+so nice of you,appraisal_thank_you
+well thank you,appraisal_thank_you
+thnx,appraisal_thank_you
+thanx,appraisal_thank_you
+that's my pleasure,appraisal_welcome
+my pleasure,appraisal_welcome
+anytime,appraisal_welcome
+welcome,appraisal_welcome
+you're welcome,appraisal_welcome
+sure welcome,appraisal_welcome
+welcome here,appraisal_welcome
+you're so welcome,appraisal_welcome
+forget about it,appraisal_welcome
+anything you want,appraisal_welcome
+i'm pleased,appraisal_welcome
+so welcome,appraisal_welcome
+you're right,confirmation_yes
+right?,confirmation_yes
+the truth?,confirmation_yes
+that's the truth,confirmation_yes
+you've got it right,confirmation_yes
+you have a right,confirmation_yes
+you're totally right,confirmation_yes
+you're completely right,confirmation_yes
+that's true,confirmation_yes
+you are right,confirmation_yes
+you're definitely right,confirmation_yes
+you're not wrong,confirmation_yes
+you're telling the truth,confirmation_yes
+what you say is true,confirmation_yes
+TRUE,confirmation_yes
+it is true,confirmation_yes
+it's right,confirmation_yes
+it's the truth,confirmation_yes
+it's true,confirmation_yes
+that is correct,confirmation_yes
+that is right,confirmation_yes
+that is true,confirmation_yes
+that is very true,confirmation_yes
+that's so true,confirmation_yes
+you are correct,confirmation_yes
+you are so right,confirmation_yes
+you're absolutely right,confirmation_yes
+you're right about that,confirmation_yes
+I know that's right,confirmation_yes
+that's correct,confirmation_yes
+it's fine,confirmation_yes
+go ahead,confirmation_yes
+sounds good,confirmation_yes
+okay,confirmation_yes
+yes,confirmation_yes
+ok,confirmation_yes
+okie dokie,confirmation_yes
+sure,confirmation_yes
+go for it,confirmation_yes
+yeah,confirmation_yes
+yea,confirmation_yes
+do it,confirmation_yes
+of course,confirmation_yes
+I guess,confirmation_yes
+correct,confirmation_yes
+yeah sure,confirmation_yes
+why not,confirmation_yes
+please do,confirmation_yes
+sure is,confirmation_yes
+I agree,confirmation_yes
+I don't mind,confirmation_yes
+certainly,confirmation_yes
+exactly,confirmation_yes
+yes I agree,confirmation_yes
+I think so,confirmation_yes
+yes it is,confirmation_yes
+right,confirmation_yes
+okay then,confirmation_yes
+yes of course,confirmation_yes
+yes I do,confirmation_yes
+that s okay,confirmation_yes
+I do,confirmation_yes
+yup,confirmation_yes
+ya,confirmation_yes
+oh yes,confirmation_yes
+yes sure,confirmation_yes
+obviously,confirmation_yes
+k,confirmation_yes
+sure why not,confirmation_yes
+yeah right,confirmation_yes
+yeah of course,confirmation_yes
+absolutely,confirmation_yes
+yes indeed,confirmation_yes
+ok sure,confirmation_yes
+ok yes,confirmation_yes
+yes correct,confirmation_yes
+ok thank you,confirmation_yes
+sure thing,confirmation_yes
+ye,confirmation_yes
+confirm,confirmation_yes
+yep,confirmation_yes
+looks good,confirmation_yes
+yes thank you,confirmation_yes
+definitely,confirmation_yes
+yes right,confirmation_yes
+yes I would like to,confirmation_yes
+alrighty,confirmation_yes
+yes definitely,confirmation_yes
+yeh,confirmation_yes
+yes it is correct,confirmation_yes
+yeah that's right,confirmation_yes
+ok you can,confirmation_yes
+yap,confirmation_yes
+yes you may,confirmation_yes
+confirmed,confirmation_yes
+of course why not,confirmation_yes
+yes that's fine,confirmation_yes
+affirmative,confirmation_yes
+yeah go ahead,confirmation_yes
+yeah I'm sure,confirmation_yes
+okay sounds good,confirmation_yes
+okay that's fine,confirmation_yes
+yeah exactly,confirmation_yes
+that is ok,confirmation_yes
+this is correct,confirmation_yes
+ok go ahead,confirmation_yes
+yes this is correct,confirmation_yes
+nevermind its okay,confirmation_yes
+okey,confirmation_yes
+yes for sure,confirmation_yes
+all right,confirmation_yes
+it's perfectly okay,confirmation_yes
+it's okay,confirmation_yes
+and it's fine,confirmation_yes
+come on,confirmation_yes
+i'm guessing,confirmation_yes
+why not?,confirmation_yes
+i don't mind,confirmation_yes
+i think so,confirmation_yes
+right?,confirmation_yes
+but why not?,confirmation_yes
+yes i'd like to go,confirmation_yes
+yes i'd like to,confirmation_yes
+yes i would like to go,confirmation_yes
+yes i would like to,confirmation_yes
+obviously why not?,confirmation_yes
+okay it's okay,confirmation_yes
+ok?,confirmation_yes
+cancel,confirmation_cancel
+abort,confirmation_cancel
+annul,confirmation_cancel
+cancel it,confirmation_cancel
+cancel request,confirmation_cancel
+cancelled,confirmation_cancel
+disregard,confirmation_cancel
+disregard that,confirmation_cancel
+cancel everything,confirmation_cancel
+cancel all,confirmation_cancel
+forget,confirmation_cancel
+don't do that,confirmation_cancel
+stop,confirmation_cancel
+forget that,confirmation_cancel
+discard,confirmation_cancel
+i said cancel,confirmation_cancel
+just cancel it,confirmation_cancel
+nothing cancel,confirmation_cancel
+just stop it,confirmation_cancel
+no cancel cancel,confirmation_cancel
+no just cancel,confirmation_cancel
+cancel my request,confirmation_cancel
+can you cancel that,confirmation_cancel
+cancel all that,confirmation_cancel
+cancel this request,confirmation_cancel
+no cancel this,confirmation_cancel
+no cancel everything,confirmation_cancel
+no stop,confirmation_cancel
+i want to cancel,confirmation_cancel
+nevermind,confirmation_cancel
+no just cancel it,confirmation_cancel
+i said cancel it,confirmation_cancel
+cancel the whole thing,confirmation_cancel
+can you cancel it,confirmation_cancel
+so cancel,confirmation_cancel
+cancel all this,confirmation_cancel
+stop it,confirmation_cancel
+i want to cancel it,confirmation_cancel
+i would like to cancel,confirmation_cancel
+now cancel,confirmation_cancel
+cancel now,confirmation_cancel
+sorry cancel,confirmation_cancel
+cancel that one,confirmation_cancel
+skip skip skip,confirmation_cancel
+cancel it cancel it,confirmation_cancel
+cancel that cancel that,confirmation_cancel
+do nothing,confirmation_cancel
+I said cancel cancel,confirmation_cancel
+but can you cancel it,confirmation_cancel
+please cancel,confirmation_cancel
+dismissal,confirmation_cancel
+don't go there,confirmation_cancel
+don't worry about it,confirmation_cancel
+forget about this,confirmation_cancel
+can you cancel?,confirmation_cancel
+can you cancel it?,confirmation_cancel
+can you cancel that?,confirmation_cancel
+cancel the request,confirmation_cancel
+cancel this entire thing,confirmation_cancel
+cancel the entire thing,confirmation_cancel
+can you stop it?,confirmation_cancel
+can you cancel this?,confirmation_cancel
+cancel this,confirmation_cancel
+i'd like to cancel,confirmation_cancel
+no?,confirmation_no
+what about no?,confirmation_no
+don't do that,confirmation_no
+i don't want it,confirmation_no
+i don't want that,confirmation_no
+i disagree with you,confirmation_no
+i don't agree,confirmation_no
+i do not agree,confirmation_no
+i disagree,confirmation_no
+but i disagree,confirmation_no
+i don't think so,confirmation_no
+but i don't think so,confirmation_no
+i said no,confirmation_no
+but not today,confirmation_no
+i don't want to do it,confirmation_no
+i don't want to,confirmation_no
+no i wouldn't,confirmation_no
+not for me,confirmation_no
+i do not think so,confirmation_no
+no that,confirmation_no
+that is not it,confirmation_no
+no please,confirmation_no
+not now thanks,confirmation_no
+no need to thank you,confirmation_no
+how about no,confirmation_no
+don t have a sense,confirmation_no
+no,confirmation_no
+don't,confirmation_no
+I don't want that,confirmation_no
+I disagree,confirmation_no
+disagree,confirmation_no
+I don't want,confirmation_no
+not interested,confirmation_no
+I don't think so,confirmation_no
+no way,confirmation_no
+no it isn't,confirmation_no
+no I don't,confirmation_no
+I'm not,confirmation_no
+na,confirmation_no
+no that's fine thank you,confirmation_no
+never,confirmation_no
+I said no,confirmation_no
+of course not,confirmation_no
+nah,confirmation_no
+no tanks,confirmation_no
+no never,confirmation_no
+no need,confirmation_no
+no thanks,confirmation_no
+no sorry,confirmation_no
+do not,confirmation_no
+not today,confirmation_no
+no it's not,confirmation_no
+absolutely not,confirmation_no
+not that,confirmation_no
+nooo,confirmation_no
+nope,confirmation_no
+I don't want to,confirmation_no
+no I would not,confirmation_no
+let 's not,confirmation_no
+not needed,confirmation_no
+not this time,confirmation_no
+no don't do that,confirmation_no
+thanks but no thanks,confirmation_no
+no that's wrong,confirmation_no
+not this,confirmation_no
+definitely not,confirmation_no
+not at this time,confirmation_no
+not exactly,confirmation_no
+no don't,confirmation_no
+not really no,confirmation_no
+no thank you not right now,confirmation_no
+actually no,confirmation_no
+no leave it,confirmation_no
+sorry no,confirmation_no
+no incorrect,confirmation_no
+nope sorry,confirmation_no
+I say no,confirmation_no
+not really,confirmation_no
+not right now thanks,confirmation_no
+I think no,confirmation_no
+absolutely no,confirmation_no
+no actually,confirmation_no
+apparently not,confirmation_no
+no do not,confirmation_no
+no just no,confirmation_no
+no but thank you,confirmation_no
+no need thanks,confirmation_no
+no thank you though,confirmation_no
+no thank you very much,confirmation_no
+no thanks not right now,confirmation_no
+no forget,confirmation_no
+I don't care,dialog_i_do_not_care
+I shouldn't care about this,dialog_i_do_not_care
+whatever,dialog_i_do_not_care
+I do not care,dialog_i_do_not_care
+I don't care at all,dialog_i_do_not_care
+i don't care about it,dialog_i_do_not_care
+i don't care,dialog_i_do_not_care
+that shouldn't concern me,dialog_i_do_not_care
+i shouldn't care,dialog_i_do_not_care
+i shouldn't care about this,dialog_i_do_not_care
+it doesn't bother me,dialog_i_do_not_care
+i don't care a lot,dialog_i_do_not_care
+i don't care at all,dialog_i_do_not_care
+please excuse me,dialog_sorry
+i'm sorry,dialog_sorry
+i apologize,dialog_sorry
+i'm so sorry,dialog_sorry
+oh my apologies,dialog_sorry
+you should excuse me,dialog_sorry
+i'd like to give you an apology,dialog_sorry
+i beg your forgiveness,dialog_sorry
+i beg your pardon,dialog_sorry
+i said i'm sorry,dialog_sorry
+apologize for the inconvenience,dialog_sorry
+please forgive me,dialog_sorry
+i'd like to say sorry,dialog_sorry
+i want to say i'm sorry,dialog_sorry
+i just want to say i'm sorry,dialog_sorry
+i just want to say sorry,dialog_sorry
+i want to say sorry,dialog_sorry
+ok i'm sorry,dialog_sorry
+excuse me,dialog_sorry
+apologise,dialog_sorry
+I apologize,dialog_sorry
+sorry,dialog_sorry
+I'm sorry,dialog_sorry
+I am so sorry,dialog_sorry
+my apologies,dialog_sorry
+apologies,dialog_sorry
+pardon,dialog_sorry
+I said sorry,dialog_sorry
+I am really sorry,dialog_sorry
+forgive me,dialog_sorry
+sorry about that,dialog_sorry
+sorry about this,dialog_sorry
+really sorry,dialog_sorry
+very sorry,dialog_sorry
+ok sorry,dialog_sorry
+I want to say sorry,dialog_sorry
+alright I'm sorry,dialog_sorry
+okay I'm sorry,dialog_sorry
+what exactly do you mean?,dialog_clarify
+what do you mean?,dialog_clarify
+what do you mean exactly?,dialog_clarify
+what exactly are you referring to?,dialog_clarify
+say that again,dialog_clarify
+what’s that now?,dialog_clarify
+what exactly are you saying?,dialog_clarify
+it wasn't right,dialog_wrong
+it's not what i asked,dialog_wrong
+that's not what i asked,dialog_wrong
+that's the wrong thing,dialog_wrong
+there's a mistake,dialog_wrong
+it's just wrong,dialog_wrong
+it's not correct,dialog_wrong
+that's not correct,dialog_wrong
+that was wrong,dialog_wrong
+that's wrong,dialog_wrong
+wrong,dialog_wrong
+it is not right,dialog_wrong
+that's not right,dialog_wrong
+it's wrong,dialog_wrong
+that is incorrect,dialog_wrong
+incorrect,dialog_wrong
+not correct,dialog_wrong
+you are wrong,dialog_wrong
+not right,dialog_wrong
+lol,emotions_ha_ha
+xd,emotions_ha_ha
+ha ha,emotions_ha_ha
+ahahah,emotions_ha_ha
+ahah lol,emotions_ha_ha
+laughing out loud,emotions_ha_ha
+LMAO,emotions_ha_ha
+that's funny,emotions_ha_ha
+ah,emotions_ha_ha
+ah ah ah,emotions_ha_ha
+ahah,emotions_ha_ha
+ahaha,emotions_ha_ha
+ahahaha,emotions_ha_ha
+ha,emotions_ha_ha
+ha ha ha,emotions_ha_ha
+ha ha ha ha,emotions_ha_ha
+hah,emotions_ha_ha
+haha,emotions_ha_ha
+haha funny,emotions_ha_ha
+haha haha haha,emotions_ha_ha
+haha that's funny,emotions_ha_ha
+haha very funny,emotions_ha_ha
+hahaha,emotions_ha_ha
+hahaha funny,emotions_ha_ha
+hahaha very funny,emotions_ha_ha
+he,emotions_ha_ha
+hehe,emotions_ha_ha
+hehehe,emotions_ha_ha
+lmao,emotions_ha_ha
+ahahh,emotions_ha_ha
+ahahahah,emotions_ha_ha
+ahahahaha,emotions_ha_ha
+hahahahahaha,emotions_ha_ha
+haha hahaha haha,emotions_ha_ha
+hahaha hahahahaha,emotions_ha_ha
+funny,emotions_ha_ha
+very funny,emotions_ha_ha
+very funny,emotions_ha_ha
+okay see you later,greetings_bye
+hope to see you later,greetings_bye
+bye for now,greetings_bye
+till next time,greetings_bye
+I must go,greetings_bye
+bye,greetings_bye
+goodbye,greetings_bye
+see you,greetings_bye
+see you soon,greetings_bye
+bye-bye,greetings_bye
+good bye,greetings_bye
+bye bye see you,greetings_bye
+bye bye see you soon,greetings_bye
+bye bye take care,greetings_bye
+that's all goodbye,greetings_bye
+that's it goodbye,greetings_bye
+goodbye see you later,greetings_bye
+alright bye,greetings_bye
+see ya,greetings_bye
+thanks bye bye,greetings_bye
+okay bye,greetings_bye
+okay thank you bye,greetings_bye
+see you tomorrow,greetings_bye
+ok bye,greetings_bye
+till the next time,greetings_bye
+i have to go,greetings_bye
+never mind,greetings_bye
+so goodbye,greetings_bye
+that's all for goodbye,greetings_bye
+ok good bye,greetings_bye
+good evening,greetings_goodevening
+good evening to you,greetings_goodevening
+hey good evening,greetings_goodevening
+hello good evening,greetings_goodevening
+evening,greetings_goodevening
+good evening there,greetings_goodevening
+i hope you have a good night,greetings_goodevening
+morning,greetings_goodmorning
+good morning,greetings_goodmorning
+good morning to you,greetings_goodmorning
+hello good morning,greetings_goodmorning
+good morning there,greetings_goodmorning
+top of the morning to you,greetings_goodmorning
+a good morning,greetings_goodmorning
+hi good morning,greetings_goodmorning
+sweet dreams,greetings_goodnight
+good night,greetings_goodnight
+have a good night,greetings_goodnight
+good night to you,greetings_goodnight
+thank you good night,greetings_goodnight
+bye good night,greetings_goodnight
+good night bye,greetings_goodnight
+good good night,greetings_goodnight
+good night for now,greetings_goodnight
+goodnight,greetings_goodnight
+night,greetings_goodnight
+thanks goodnight,greetings_goodnight
+good night see you tomorrow,greetings_goodnight
+alright goodnight,greetings_goodnight
+good tonight,greetings_goodnight
+okay have a good night,greetings_goodnight
+goodbye goodnight,greetings_goodnight
+goodbye good night,greetings_goodnight
+good night goodbye,greetings_goodnight
+all right good night,greetings_goodnight
+all right goodnight,greetings_goodnight
+all right have a good night,greetings_goodnight
+good day,greetings_hello
+long time no see,greetings_hello
+hello,greetings_hello
+hi,greetings_hello
+howdy,greetings_hello
+hey there,greetings_hello
+hey,greetings_hello
+greetings,greetings_hello
+I greet you,greetings_hello
+hi there,greetings_hello
+hello there,greetings_hello
+lovely day isn't it,greetings_hello
+hello again,greetings_hello
+just going to say hi,greetings_hello
+a good day,greetings_hello
+afternoon,greetings_hello
+hello hi,greetings_hello
+heya,greetings_hello
+how is your morning so far,greetings_how_are_you
+how are you getting on,greetings_how_are_you
+how's your day going,greetings_how_are_you
+how are you,greetings_how_are_you
+is everything alright?,greetings_how_are_you
+how are you doing?,greetings_how_are_you
+how are the things going?,greetings_how_are_you
+are you alright?,greetings_how_are_you
+are you okay?,greetings_how_are_you
+how are you feeling?,greetings_how_are_you
+is everything okay?,greetings_how_are_you
+how are you today?,greetings_how_are_you
+how do you do?,greetings_how_are_you
+how do you feel?,greetings_how_are_you
+how have you been?,greetings_how_are_you
+how goes it?,greetings_how_are_you
+how is it going?,greetings_how_are_you
+how is your day?,greetings_how_are_you
+how is your day going?,greetings_how_are_you
+how is your evening?,greetings_how_are_you
+are you having a good day?,greetings_how_are_you
+hope your day is going well,greetings_how_are_you
+hope you're having a pleasant evening,greetings_how_are_you
+how's life?,greetings_how_are_you
+how is your life?,greetings_how_are_you
+how has your day been?,greetings_how_are_you
+how is your morning going?,greetings_how_are_you
+how has your day been going?,greetings_how_are_you
+how are you doing this morning?,greetings_how_are_you
+how's your morning going?,greetings_how_are_you
+how is your morning so far?,greetings_how_are_you
+what's your progress?,greetings_how_are_you
+how're you doing?,greetings_how_are_you
+how are you?,greetings_how_are_you
+how is everything?,greetings_how_are_you
+how are things going?,greetings_how_are_you
+how are you doing?,greetings_how_are_you
+how're you doing?,greetings_how_are_you
+how is your day going?,greetings_how_are_you
+how are you doing today?,greetings_how_are_you
+how are the things going?,greetings_how_are_you
+are you okay?,greetings_how_are_you
+are you fine?,greetings_how_are_you
+how's the mood?,greetings_how_are_you
+how's your mood?,greetings_how_are_you
+what are you feeling like?,greetings_how_are_you
+how are you today?,greetings_how_are_you
+how's it?,greetings_how_are_you
+how it's going?,greetings_how_are_you
+how's it going?,greetings_how_are_you
+how's your night?,greetings_how_are_you
+how's your evening?,greetings_how_are_you
+are you having a good day?,greetings_how_are_you
+how's life?,greetings_how_are_you
+i'm fine and you're fine,greetings_how_are_you
+how's your life?,greetings_how_are_you
+how is your life?,greetings_how_are_you
+how's the day going?,greetings_how_are_you
+how's your day going?,greetings_how_are_you
+how is your morning going?,greetings_how_are_you
+what's your day like?,greetings_how_are_you
+what about you?,greetings_how_are_you
+i'm glad to meet you,greetings_nice_to_meet_you
+happy to meet you,greetings_nice_to_meet_you
+it's an honour to meet you,greetings_nice_to_meet_you
+nice to meet you,greetings_nice_to_meet_you
+it was nice meeting you,greetings_nice_to_meet_you
+it was very nice to meet you,greetings_nice_to_meet_you
+glad to meet you,greetings_nice_to_meet_you
+nice meeting you,greetings_nice_to_meet_you
+pleased to meet you,greetings_nice_to_meet_you
+pleasure to meet you,greetings_nice_to_meet_you
+wonderful to meet you,greetings_nice_to_meet_you
+what a pleasure to meet you,greetings_nice_to_meet_you
+it's nice to see you,greetings_nice_to_see_you
+lovely to see you,greetings_nice_to_see_you
+I'm glad to see you,greetings_nice_to_see_you
+great to see you,greetings_nice_to_see_you
+it's good to see you,greetings_nice_to_see_you
+glad to see you,greetings_nice_to_see_you
+how good it is to see you,greetings_nice_to_see_you
+always a pleasure to see you,greetings_nice_to_see_you
+nice to see you,greetings_nice_to_see_you
+good to see you,greetings_nice_to_see_you
+great to see you again,greetings_nice_to_see_you
+I am glad to see you again,greetings_nice_to_see_you
+nice to see you again,greetings_nice_to_see_you
+good to see you again,greetings_nice_to_see_you
+happy to see you,greetings_nice_to_see_you
+how nice to see you,greetings_nice_to_see_you
+glad to see you again,greetings_nice_to_see_you
+it's nice talking to you,greetings_nice_to_talk_to_you
+it was nice to talk with you,greetings_nice_to_talk_to_you
+it's really nice to talk to you,greetings_nice_to_talk_to_you
+i'm happy to talk to you,greetings_nice_to_talk_to_you
+what a pleasure to chat with you,greetings_nice_to_talk_to_you
+how nice to talk to you,greetings_nice_to_talk_to_you
+it's been so nice to talk to you,greetings_nice_to_talk_to_you
+it's been a pleasure talking to you,greetings_nice_to_talk_to_you
+nice to talk to you,greetings_nice_to_talk_to_you
+it's nice to talk to you,greetings_nice_to_talk_to_you
+nice talking to you,greetings_nice_to_talk_to_you
+it is nice talking to you,greetings_nice_to_talk_to_you
+how nice it is to talk to you,greetings_nice_to_talk_to_you
+what is on your mind,greetings_whatsup
+what is up,greetings_whatsup
+what's up,greetings_whatsup
+whazzup,greetings_whatsup
+good what's up,greetings_whatsup
+what's shaking,greetings_whatsup
+wassup,greetings_whatsup
+what is going on,greetings_whatsup
+what is happening,greetings_whatsup
+what's cracking,greetings_whatsup
+what's cooking,greetings_whatsup
+hey what's up,greetings_whatsup
+what's up today,greetings_whatsup
+what's your thought?,greetings_whatsup
+what happened?,greetings_whatsup
+what happened,greetings_whatsup
+what's happened?,greetings_whatsup
+what's going on here?,greetings_whatsup
+what?,greetings_whatsup
+what is going on?,greetings_whatsup
+what's the crack?,greetings_whatsup
+what's cooking?,greetings_whatsup
+hey what's up?,greetings_whatsup
+i'm mad about this,user_angry
+i'm angry,user_angry
+i am angry,user_angry
+i'm mad,user_angry
+i'm infuriated,user_angry
+i'm enraged,user_angry
+i'm upset,user_angry
+i'm angry,user_angry
+i'm furious,user_angry
+i'm mad at you,user_angry
+i'm angry at you,user_angry
+i'm angry with you,user_angry
+i am angry with you,user_angry
+i'm so mad,user_angry
+i am mad at you,user_angry
+I'm being mad,user_angry
+I'm enraged,user_angry
+I'm angry,user_angry
+I'm furious,user_angry
+I am angry with you,user_angry
+I am mad,user_angry
+I am mad at you,user_angry
+i'm bored,user_bored
+i'm getting bored,user_bored
+i am getting bored,user_bored
+it's boring,user_bored
+it's a bit boring,user_bored
+that was boring,user_bored
+I'm bored,user_bored
+bored,user_bored
+boring,user_bored
+I am getting bored,user_bored
+this is boring,user_bored
+very boring,user_bored
+it bores me,user_bored
+I'm overloaded,user_busy
+I have no time,user_busy
+I'm busy,user_busy
+I'm swamped,user_busy
+I got things to do,user_busy
+how busy I am,user_busy
+i'm overwhelmed,user_busy
+i'm overloaded,user_busy
+i don't have time,user_busy
+i'm busy,user_busy
+i'm flooded,user_busy
+i'm so swamped,user_busy
+i'm being swamped,user_busy
+i'm swamped,user_busy
+i have things to do,user_busy
+i have something to do,user_busy
+i have to do some work,user_busy
+i have a job to do,user_busy
+i have some work to do,user_busy
+i work,user_busy
+i'm a worker,user_busy
+i'm working,user_busy
+i don't have time to do this,user_busy
+i don't have time for it,user_busy
+i don't have time for this,user_busy
+i'm an insomniac,user_can_not_sleep
+i'm insomniac,user_can_not_sleep
+i'm insomnious,user_can_not_sleep
+i'm a sleepless mess,user_can_not_sleep
+i'm sleepy,user_can_not_sleep
+i'm sleepless,user_can_not_sleep
+i can't sleep,user_can_not_sleep
+i can't get any sleep,user_can_not_sleep
+i'm not able to sleep,user_can_not_sleep
+can't sleep at all,user_can_not_sleep
+i can't fall asleep,user_can_not_sleep
+i can't go to bed,user_can_not_sleep
+i can't get to sleep,user_can_not_sleep
+i can't have sleep,user_can_not_sleep
+i am an insomniac,user_can_not_sleep
+i am a insomniac,user_can_not_sleep
+I'm insomnious,user_can_not_sleep
+I'm sleepless,user_can_not_sleep
+I can't get any sleep,user_can_not_sleep
+I can't sleep,user_can_not_sleep
+I can't fall asleep,user_can_not_sleep
+I can't get to sleep,user_can_not_sleep
+I can't get no sleep,user_can_not_sleep
+I'm insomniac,user_can_not_sleep
+I am excited,user_excited
+I'm really excited,user_excited
+how excited I am,user_excited
+I'm thrilled,user_excited
+i'm excited,user_excited
+i'm very excited,user_excited
+i'm really excited,user_excited
+how excited i am,user_excited
+i'm very excited about this,user_excited
+i'm so excited,user_excited
+i'm delighted,user_excited
+i'm really thrilled,user_excited
+i'm thrilled,user_excited
+i want to go to sleep,user_going_to_bed
+i want to go to bed,user_going_to_bed
+i'd like to go to sleep,user_going_to_bed
+i'd like to go to bed,user_going_to_bed
+the time to go to bed,user_going_to_bed
+i'm going to bed,user_going_to_bed
+i'm tired and i want to go to bed,user_going_to_bed
+i'm a little tired i want to go to bed,user_going_to_bed
+i'm a little tired and i want to go to bed,user_going_to_bed
+go to bed,user_going_to_bed
+let's go to bed,user_going_to_bed
+I'd like to go to bed,user_going_to_bed
+is it time for bed yet,user_going_to_bed
+it's time to go to bed,user_going_to_bed
+time for us to go to bed,user_going_to_bed
+I'm going to bed,user_going_to_bed
+I'm a little tired and I want to go to bed,user_going_to_bed
+it's bed time,user_going_to_bed
+going to bed now,user_going_to_bed
+I am good,user_good
+I'm doing just great,user_good
+I'm doing fine,user_good
+I'm good,user_good
+I'm doing good,user_good
+I'm great thanks,user_good
+i'm good,user_good
+i do great,user_good
+i'm doing pretty good,user_good
+i'm doing so well,user_good
+i'm doing great,user_good
+i'm ok,user_good
+i'm feeling good,user_good
+i'm doing okay,user_good
+i'm doing well,user_good
+i'm doing fine,user_good
+i'm doing good,user_good
+i'm great thanks,user_good
+i'm glad,user_happy
+i'm happy,user_happy
+i am happy,user_happy
+if you are happy then so am i,user_happy
+if you are happy then i'm happy,user_happy
+if you're happy then i'm happy,user_happy
+I am happy,user_happy
+I'm happy to see you,user_happy
+happy,user_happy
+if you're happy then I'm happy,user_happy
+I'm happy for you,user_happy
+I'm happy to help,user_happy
+it is my birthday,user_has_birthday
+I'm celebrating my birthday today,user_has_birthday
+today is my birthday,user_has_birthday
+it's my birthday today,user_has_birthday
+I was born today,user_has_birthday
+it's my b-day,user_has_birthday
+i have a birthday today,user_has_birthday
+i celebrate my birthday today,user_has_birthday
+i'm celebrating my birthday today,user_has_birthday
+today's my birthday,user_has_birthday
+today it's my birthday,user_has_birthday
+i'm having my birthday today,user_has_birthday
+my birthday,user_has_birthday
+i have a birthday,user_has_birthday
+I am joking,user_joking
+I'm kidding,user_joking
+I'm just being funny,user_joking
+it was a joke,user_joking
+I was just joking,user_joking
+it's a joke,user_joking
+joking,user_joking
+just kidding,user_joking
+kidding,user_joking
+I'm just playing with you,user_joking
+i'm just kidding,user_joking
+i'm just saying,user_joking
+i'm just joking,user_joking
+i'm joking,user_joking
+i am kidding,user_joking
+i'm kidding,user_joking
+i just'm trying to be funny,user_joking
+i'm just funny,user_joking
+i'm just having fun,user_joking
+that was a joke,user_joking
+just a joke,user_joking
+i just thought it was a joke,user_joking
+i just joked,user_joking
+i was just joking,user_joking
+i'm just making a joke,user_joking
+that's a joke,user_joking
+i'm doing it as a joke,user_joking
+i'm just playing with you,user_joking
+i like you,user_likes_bot
+i think i like you,user_likes_bot
+i like you too,user_likes_bot
+but i like you,user_likes_bot
+i like you very much,user_likes_bot
+you're special for me,user_likes_bot
+you know i like you,user_likes_bot
+you're special to me,user_likes_bot
+but i really like you,user_likes_bot
+that's what i love about you,user_likes_bot
+that's what i like about you,user_likes_bot
+i like you as my friend,user_likes_bot
+i like you as a friend,user_likes_bot
+i told you i like you,user_likes_bot
+you're great and i like you,user_likes_bot
+but i like u,user_likes_bot
+you're funny and i like you,user_likes_bot
+i kind of like you,user_likes_bot
+you're a special person to me,user_likes_bot
+you're my special guy,user_likes_bot
+i like you like that,user_likes_bot
+i like you so much,user_likes_bot
+i really like you,user_likes_bot
+I like you the way you are,user_likes_bot
+I like you,user_likes_bot
+I like you a lot,user_likes_bot
+I think I like you,user_likes_bot
+I liked you,user_likes_bot
+like you a lot,user_likes_bot
+you are special,user_likes_bot
+I like you too,user_likes_bot
+I really like you,user_likes_bot
+I like u,user_likes_bot
+just like you,user_likes_bot
+I like you very much,user_likes_bot
+I like you so much,user_likes_bot
+yeah I like you,user_likes_bot
+you're special,user_likes_bot
+yes I like you,user_likes_bot
+okay I like you,user_likes_bot
+you are special to me,user_likes_bot
+you are very special,user_likes_bot
+you are so sweet,user_likes_bot
+you know I like you,user_likes_bot
+that's why I like you,user_likes_bot
+you are very special to me,user_likes_bot
+I just like you,user_likes_bot
+hey I like you,user_likes_bot
+thank you I like you too,user_likes_bot
+I do like you,user_likes_bot
+you are special for me,user_likes_bot
+that's what I like about you,user_likes_bot
+you are so special,user_likes_bot
+hi I like you,user_likes_bot
+I really really like you,user_likes_bot
+you're awesome I like you,user_likes_bot
+I also like you,user_likes_bot
+of course I like you,user_likes_bot
+I am lonely,user_lonely
+I'm very lonely,user_lonely
+I'm so lonely,user_lonely
+I'm really lonely,user_lonely
+I am feeling lonely,user_lonely
+I feel lonely,user_lonely
+i'm lonely,user_lonely
+i am very lonely,user_lonely
+i'm very lonely,user_lonely
+i'm so alone,user_lonely
+i'm so lonely,user_lonely
+i feel alone,user_lonely
+i feel lonely,user_lonely
+i'm feeling lonely,user_lonely
+what do i look like?,user_looks_like
+how do i look?,user_looks_like
+do i look good?,user_looks_like
+you know what i look like?,user_looks_like
+don't you know what i look like?,user_looks_like
+do you know what i look like?,user_looks_like
+can you see how i look?,user_looks_like
+can you see what i'm like?,user_looks_like
+can you see what i look like?,user_looks_like
+what do you think i look like?,user_looks_like
+what do I look like,user_looks_like
+how do I look,user_looks_like
+do you know what I look like,user_looks_like
+can you see what I look like,user_looks_like
+what do you think I look like,user_looks_like
+I love you,user_loves_bot
+love you,user_loves_bot
+I adore you,user_loves_bot
+I am in love with you,user_loves_bot
+I love you so much,user_loves_bot
+I love you too,user_loves_bot
+I think I love you,user_loves_bot
+loving you,user_loves_bot
+you know I love you,user_loves_bot
+i love you,user_loves_bot
+i also love you,user_loves_bot
+i love you too,user_loves_bot
+i think i'm in love with you,user_loves_bot
+i think i love you,user_loves_bot
+you know i love you,user_loves_bot
+i'm sad,user_sad
+i grieve,user_sad
+i'm grieving,user_sad
+i'm depressed,user_sad
+i feel sad,user_sad
+i'm feeling sad,user_sad
+i'm frustrated,user_sad
+i'm upset,user_sad
+i am upset,user_sad
+i'm just not happy,user_sad
+i am unhappy,user_sad
+i'm unhappy,user_sad
+i have a bad day,user_sad
+i'm having a bad day,user_sad
+i want to cry,user_sad
+i'm not happy about it,user_sad
+i'm not happy,user_sad
+I am sad,user_sad
+I'm grieving,user_sad
+I am depressed,user_sad
+I am feeling sad,user_sad
+I am upset,user_sad
+I'm unhappy,user_sad
+I'm having a bad day,user_sad
+I want to cry,user_sad
+I'm not happy,user_sad
+I am sleepy,user_sleepy
+I want to sleep,user_sleepy
+I'm falling asleep,user_sleepy
+I'm falling asleep on my feet,user_sleepy
+I'm sleeping,user_sleepy
+i'm sleepy,user_sleepy
+i want to sleep,user_sleepy
+i am going to sleep,user_sleepy
+i'm trying to fall asleep,user_sleepy
+i'm falling asleep,user_sleepy
+i sleep,user_sleepy
+i'm sleeping,user_sleepy
+I'm drained,user_tired
+I've overworked,user_tired
+I am tired,user_tired
+I'm exhausted,user_tired
+I grow weary,user_tired
+I'm worn out,user_tired
+I'm getting tired,user_tired
+I feel tired,user_tired
+i'm exhausted,user_tired
+i'm depleted,user_tired
+i'm drained,user_tired
+i'm too busy,user_tired
+i've been so overworked,user_tired
+i'm overworked,user_tired
+i've overworked,user_tired
+i'm tired,user_tired
+i am tired,user_tired
+i get tired,user_tired
+i become weary,user_tired
+i get weary,user_tired
+i grow weary,user_tired
+i'm wiped out,user_tired
+i'm getting tired,user_tired
+i feel tired,user_tired
+i just want to talk,user_wants_to_talk
+let's talk about something,user_wants_to_talk
+let's have a conversation,user_wants_to_talk
+can we speak?,user_wants_to_talk
+can we talk?,user_wants_to_talk
+i'd like to talk to you,user_wants_to_talk
+i want to talk to you,user_wants_to_talk
+i have to talk to you,user_wants_to_talk
+i need to talk to you,user_wants_to_talk
+i'd like to talk with you,user_wants_to_talk
+i want to talk with you,user_wants_to_talk
+i want to speak to you,user_wants_to_talk
+i want to speak with you,user_wants_to_talk
+can we chat?,user_wants_to_talk
+I just want to talk,user_wants_to_talk
+let's discuss something,user_wants_to_talk
+let's have a discussion,user_wants_to_talk
+can we talk,user_wants_to_talk
+let's talk,user_wants_to_talk
+I want to talk to you,user_wants_to_talk
+I need to talk to you,user_wants_to_talk
+I want to speak with you,user_wants_to_talk
+can we chat,user_wants_to_talk
